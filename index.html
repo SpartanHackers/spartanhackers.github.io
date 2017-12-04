@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="overflow-y: hidden;" lang="en-US"><!--<![endif]-->
+	<head>
+
+		<title>Spartan Hackers</title>
+
+		<!-- META DATA -->
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+
+		<!-- CSS Global Compulsory -->
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/style.css">
+
+		<!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="./css/font-awesome.css">
+		<link rel="stylesheet" href="./css/animate.css">
+        <link rel="stylesheet" href="./css/owl.css">
+		<link rel="stylesheet" href="./css/jquery.css">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!--[if lt IE 11]>
+			<link rel="stylesheet" type="text/css" href="css/ie.css">
+		<![endif]-->
+
+		<!-- FONTS -->
+		<link href="./css/css.css" rel="stylesheet" type="text/css">
+		<link href="./css/css_002.css" rel="stylesheet" type="text/css">
+
+		<!-- JS -->
+		<script type="text/javascript" src="./js/modernizr.js"></script>
+		<script type="text/javascript" src="https://use.fontawesome.com/e22ecb2fed.js"></script>
+
+		<!-- FAVICONS -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicomatic/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicomatic/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicomatic/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicomatic/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicomatic/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicomatic/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="./img/favicomatic/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="./img/favicomatic/favicon-16x16.png" sizes="16x16" />
+		<meta name="application-name" content="Spartan Hackers"/>
+		<meta name="msapplication-TileColor" content="#18453B" />
+		<meta name="msapplication-TileImage" content="./img/favicomatic/mstile-144x144.png" />
+
+		<style id="fit-vids-style">
+.fluid-width-video-wrapper {width:100%;position:relative;padding:0;}
+.fluid-width-video-wrapper iframe,
+.fluid-width-video-wrapper object,
+.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
+	</head>
+	<body>
+
+		<div id="preloader" style="display: none;">
+			<div id="loading-animation">&nbsp;</div>
+		</div>
+
+		<!-- Navigation -->
+		<nav id="navigation" class="site-nav navigation navbar onstart animated fadeInDown visible" data-animation="fadeInDown" data-animation-delay="800">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+						<span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand go-slide" href="#" data-slide="1">
+						<h2 class="color-white onstart animated fadeInUp visible">Spartan Hackers</h2>
+						<!-- Logo
+                          <img class="logo" src="./img/logo.png" alt="">
+                          <img class="logo-mobile" src="./img/logo-mobile.png" alt="">
+						-->
+					</a>
+				</div>
+				<div id="main-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right nav-tour">
+                        <!--TODO: fix carousel javascript in main
+                        <li><a data-target="#owl-wrapper" data-slide-to="0" class="active">Home</a></li>
+                        <li><a data-target="#owl-wrapper" data-slide-to="1">Subscribe</a></li>
+                        <li><a data-target="#owl-wrapper" data-slide-to="2">About</a></li>
+                        <li><a data-target="#owl-wrapper" data-slide-to="3">Contact</a></li>
+                        <li><a data-target="#owl-wrapper" data-slide-to="4">Features</a></li>
+                        -->
+                        <li><a class="active">Home</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav_border"></div>
+		</nav>
+
+		<!-- General Section -->
+		<section class="home section fullscreen site-main" style="min-height: 805px;">
+			<div class="section-container">
+				<div class="page-container" style="width: 1436px;">
+                    <div id="my-carousel" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+						<div id="owl-wrapper" class="owl-wrapper-outer carousel" data-ride="carousel" data-interval="false">
+                            <div class="owl-wrapper carousel-inner" style="width: 14360px; left: 0px; display: block;">
+
+                                <!-- Home Section -->
+                                <div class="item owl-item active" style="width: 1436px;">
+                                    <div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="slide-content">
+                                                        <div id="counter" class="countdown onstart animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="1000" data-countdown="2018/1/9 18:00:00">
+                                                            <div class="counter-container">
+                                                                <div class="counter-box first">
+                                                                    <div class="number">0</div>
+                                                                    <span>Day</span>
+                                                                </div>
+                                                                <div class="counter-box">
+                                                                    <div class="number">00</div>
+                                                                    <span>Hours</span>
+                                                                </div>
+                                                                <div class="counter-box">
+                                                                    <div class="number">00</div>
+                                                                    <span>Minutes</span>
+                                                                </div>
+                                                                <div class="counter-box last">
+                                                                    <div class="number">00</div>
+                                                                    <span>Seconds</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="color-white onstart animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="1000">Spartan Hackers exists to foster a community of technological innovation, collaboriation, and creation at Michigan State Univesity.  Welcome to the club: you're in the right place.</h3>
+                                                        <a href="mailto:webmaster.spartanhackers@gmail.com?subject=From%20The%20Site&body=Sign%20me%20up%20for%20the%20newsletter%20this%20instant!" class="border-button go-slide onstart animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="1200" data-slide="2">Subscribe</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Subscribe Section -->
+                                <div class="item owl-item" style="width: 1436px;">
+                                    <div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="section-header color-white">
+                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">Subscribe To Our Newsletter</h2><!-- END TITLE -->
+                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
+                                                    </div>
+                                                    <div class="slide-content">
+                                                        <p class="animated" data-animation="fadeInUp" data-animation-delay="1200">Lorem
+                                                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                                        commodo consequat.</p>
+                                                        <!-- Subscribe Form -->
+                                                        <div class="form animated" data-animation="fadeInUp" data-animation-delay="1400">
+                                                            <div class="form-container">
+                                                                <div class="page-section" id="signup">
+                                                                    <form class="subscription-form mailchimp-form" method="post" id="mc-form" novalidate="true">
+                                                                        <input id="email" class="border-radius-22 no-bottom-margin" name="EMAIL" placeholder="Enter Your Email Address" type="email">
+                                                                        <button type="submit" id="subscribebtn" class="border-button no-bottom-margin">Subscribe</button>
+                                                                    </form>
+                                                                    <p class="error-message"></p>
+                                                                    <p class="success-message"></p>
+                                                                </div><!--end page section -->
+                                                            </div><!-- end form container -->
+                                                        </div><!-- end Subscribe Form -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- About Section -->
+                                <div class="item owl-item" style="width: 1436px;">
+                                    <div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="section-header">
+                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">About Us</h2><!-- END TITLE -->
+                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
+                                                    </div>
+                                                    <div class="slide-content animated" data-animation="fadeInUp" data-animation-delay="1200">
+                                                        <p>Lorem ipsum dolor sit amet, ne qui animal regione 
+                                                        adversarium, ferri nonumes signiferumque qui no, errem doming persecuti 
+                                                        pro at. At sit suavitate consectetuer. Ad nec vide tincidunt. An esse 
+                                                        docendi his, pro eius dicta dicit id.</p>
+                                                        <p>Ad quot facilisis conceptam pro. Per omnis movet ei. Vis 
+                                                        tation euismod cu, cu quod dolorem mediocritatem qui, qui suscipit 
+                                                        vulputate eloquentiam in. His malis simul percipitur id. In nam graece 
+                                                        nostrum deserunt, eos sonet omittam expetenda ei. Ei sed paulo nonumes 
+                                                        petentium.</p>
+                                                        <p>Ad quot facilisis conceptam pro. Per omnis movet ei. Vis 
+                                                        tation euismod cu, cu quod dolorem mediocritatem qui, qui suscipit 
+                                                        vulputate eloquentiam in. His malis simul percipitur id.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Contact Section -->
+                                <div class="item owl-item" style="width: 1436px;">
+                                    <div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="section-header">
+                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">Get In Touch</h2><!-- END TITLE -->
+                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
+                                                    </div>
+                                                    <div class="slide-content">
+                                                        <p class="animated" data-animation="fadeInUp" data-animation-delay="1200">Lorem
+                                                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                                        commodo consequat.</p>
+                                                        <!-- START CONTACT FORM -->
+                                                        <form method="post" action="send-mail.php" class="contact-form">
+                                                            <div class="row">
+                                                                <div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="1400">
+                                                                    <input name="name" placeholder="Name" class="required" type="text">
+                                                                </div>
+                                                                <div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="1500">
+                                                                    <input name="email" placeholder="Email address" class="contact-form-email required" type="email">
+                                                                </div>
+                                                                <div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="1600">
+                                                                    <input name="subject" placeholder="Subject" class="contact-form-subject" type="text">
+                                                                </div>
+                                                            </div>
+                                                            <textarea name="message" placeholder="Message" class="required animated" data-animation="fadeInUp" data-animation-delay="1800" rows="7"></textarea>
+                                                            <div class="response-message"></div>
+                                                            <button class="border-button animated" data-animation="fadeInUp" data-animation-delay="2000" type="submit" id="submit" name="submit">Send Message</button>
+                                                        </form><!-- END CONTACT FORM -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Features Section -->
+                                <div class="item owl-item" style="width: 1436px;">
+                                    <div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="tour-header">
+                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">Amazing Features</h2><!-- END TITLE -->
+                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
+                                                    </div>
+                                                    <div class="slide-content">
+
+                                                        <!-- Service -->
+                                                        <div class="col-md-4 service animated" data-animation="fadeInLeft" data-animation-delay="1300">
+                                                            <div class="service-icon">
+                                                                <i class="fa fa-book"></i>
+                                                            </div>
+                                                            <h3>Well Documented</h3>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                                            cupidatat non proident.</p>
+                                                        </div>
+
+                                                        <!-- Service -->
+                                                        <div class="col-md-4 service animated" data-animation="fadeInUp" data-animation-delay="1200">
+                                                            <div class="service-icon">
+                                                                <i class="fa fa-mobile"></i>
+                                                            </div>
+                                                            <h3>Fully Responsive</h3>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                                            cupidatat non proident.</p>
+                                                        </div>
+
+                                                        <!-- Service -->
+                                                        <div class="col-md-4 service animated" data-animation="fadeInRight" data-animation-delay="1300">
+                                                            <div class="service-icon">
+                                                                <i class="fa fa-gift"></i>
+                                                            </div>
+                                                            <h3>Amazing Features</h3>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                                            cupidatat non proident.</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+						</div>
+					</div><!-- end of .owl-carousel -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Overlay -->
+		<div class="overlay">
+			<div class="overlay-color gradient-1 opacity-80"></div>
+			<div class="overlay-image cover-background" style="background-image:url('./img/eb-background.jpg');"></div>
+		</div>
+
+		<!-- Social Icons -->
+		<nav class="socials-icons onstart animated fadeIn visible" data-animation="fadeIn" data-animation-delay="1400">
+			<ul>
+				<li><a href="https://www.facebook.com/hack.at.state/"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/spartanhackers"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCEsVXKr2P-el9TugNDmwj_g"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-meetup"></i></a></li>
+				<li><a href="https://csemsu.slack.com/signup"><i class="fa fa-slack"></i></a></li>
+				<li><a href="https://trello.com/spartanhackers"><i class="fa fa-trello"></i></a></li>
+				<li><a href="https://github.com/SpartanHackers"><i class="fa fa-github"></i></a></li>
+				<li><a href="https://github.com/SpartanHackers/spartancs.github.io"><i class="fa fa-html5"></i></a></li>
+				<li><a href="#"><i class="fa fa-apple"></i></a></li>
+				<li><a href="#"><i class="fa fa-android"></i></a></li>
+			</ul> 
+		</nav>
+
+		<!-- JS -->
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.js"></script>
+		<script type="text/javascript" src="./js/plugins.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+
+        <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 3px; z-index: 10000; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; display: none; opacity: 0;">
+            <div style="position: relative; top: 0px; float: right; width: 3px; height: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;" class="nicescroll-cursors"></div>
+        </div>
+	</body>
+</html>
