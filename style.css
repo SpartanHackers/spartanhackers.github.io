@@ -1,0 +1,244 @@
+    
+@media screen and (max-width: 990px) {
+    h1{
+        font-size: 24px;
+        padding-top: 30px;
+    }
+    .change-text{
+        font-size: 0px;
+    } 
+    h3, h2, h4 {
+        font-size: 14px;
+    } 
+    .header-space{
+        padding-top: 20%;
+    }
+    .bg-experience p {
+        text-align: left;
+    }
+    .smaller{
+        font-size: 12px;
+    }
+}  
+    
+body, html {
+    height: 100%;
+    margin: 0%;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+p {
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+
+.letter {
+    font-weight: bold;
+    font-size: 40%;
+    letter-spacing: normal;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .letter {
+        font-weight: bold;
+        font-size: 250%;
+    }
+}
+
+
+.home-parallax {
+    /* The image used */
+    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url(images/BK1.jpg);
+
+    /* Full height */
+/*    height: 100%; */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.home2-parallax {
+    /* The image used */
+    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK2.jpg");
+
+    /* Full height */
+/*    height: 100%; */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.bg-about { 
+    background-color: #ffffff; /* White */
+    border-bottom: solid;
+    border-bottom-width: thin;
+
+    color: black;
+
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+}  
+.bg-linebreak {
+    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK1.jpg");
+    color: #ffffff;
+     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.bg-skills { 
+    /* The image used */
+    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK1.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #ffffff;
+    
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+} 
+
+.bg-eboard { 
+    /* The image used */
+    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK2.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #ffffff;
+    
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+} 
+
+.bg-experience { 
+    
+    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.0));
+
+    color: #555555;
+    
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+} 
+.bg-resume { 
+    /* The image used */
+    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK2.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #ffffff;
+    
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+} 
+.bg-resume h4:hover {
+    background-color: black;
+    opacity: .7;
+    color: white;
+
+}
+
+.bg-contacts { 
+    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.0));
+    border-bottom: solid;
+    border-bottom-width: thin;
+    
+    color: #555555;
+    
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.bg-footer { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}    
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+    font-weight: 200;
+}
+.navbar-nav  li a {
+    color:  white !important;
+}      
+.navbar-nav  li a:hover {
+    color:  #1abc9c !important;
+}  
+.navbar-header a {
+    color:  white !important;
+}  
+.navbar-header a:hover {
+    color:  #1abc9c !important;
+}     
+.scrolled{
+    background-color: black;
+    transition: 0.2s;
+}
+  
+.skill-cell{
+    border-left: solid;
+    border-right: solid;
+    border-width: thin;
+}
+.glyphicon{
+    padding-top: 50px;
+}
+.header-space{
+    padding-bottom: 4%;
+}

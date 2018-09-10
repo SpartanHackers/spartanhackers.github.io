@@ -1,346 +1,568 @@
 <!DOCTYPE html>
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="overflow-y: hidden;" lang="en-US"><!--<![endif]-->
-	<head>
+<html>
+<head>
+<title>MSU SPARTAN HACKERS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/shoutline.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+    
+<body>
 
-		<title>Spartan Hackers</title>
+    
+    
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        
+      <a class="navbar-brand" data-aos="fade-in" href="#home">SPARTAN HACKERS</a>
+    </div>
+    <div class="collapse navbar-collapse" data-aos="fade-in" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#join">JOIN</a></li>
+        <li><a href="#events">UPCOMING EVENTS</a></li>
+          <li><a href="#eventInfo">EVENT INFO</a></li>
+        <li><a href="#eboard">E-BOARD</a></li>
+        <li><a href="#sponsors">SPONSORS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>    
+    
 
-		<!-- META DATA -->
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="author" content="">
-
-		<!-- CSS Global Compulsory -->
-		<link rel="stylesheet" href="./css/bootstrap.css">
-		<link rel="stylesheet" href="./css/style.css">
-
-		<!-- CSS Implementing Plugins -->
-		<link rel="stylesheet" href="./css/font-awesome.css">
-		<link rel="stylesheet" href="./css/animate.css">
-        <link rel="stylesheet" href="./css/owl.css">
-		<link rel="stylesheet" href="./css/jquery.css">
-
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<script src="js/respond.min.js"></script>
-		<![endif]-->
-
-		<!--[if lt IE 11]>
-			<link rel="stylesheet" type="text/css" href="css/ie.css">
-		<![endif]-->
-
-		<!-- FONTS -->
-		<link href="./css/css.css" rel="stylesheet" type="text/css">
-		<link href="./css/css_002.css" rel="stylesheet" type="text/css">
-
-		<!-- JS -->
-		<script type="text/javascript" src="./js/modernizr.js"></script>
-		<script type="text/javascript" src="https://use.fontawesome.com/e22ecb2fed.js"></script>
-
-		<!-- FAVICONS -->
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicomatic/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicomatic/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicomatic/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicomatic/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicomatic/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicomatic/apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/png" href="./img/favicomatic/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="./img/favicomatic/favicon-16x16.png" sizes="16x16" />
-		<meta name="application-name" content="Spartan Hackers"/>
-		<meta name="msapplication-TileColor" content="#18453B" />
-		<meta name="msapplication-TileImage" content="./img/favicomatic/mstile-144x144.png" />
-
-		<style id="fit-vids-style">
-.fluid-width-video-wrapper {width:100%;position:relative;padding:0;}
-.fluid-width-video-wrapper iframe,
-.fluid-width-video-wrapper object,
-.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-	</head>
-	<body>
-
-		<div id="preloader" style="display: none;">
-			<div id="loading-animation">&nbsp;</div>
-		</div>
-
-		<!-- Navigation -->
-		<nav id="navigation" class="site-nav navigation navbar onstart animated fadeInDown visible" data-animation="fadeInDown" data-animation-delay="800">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-						<span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand go-slide" href="#" data-slide="1">
-						<h2 class="color-white onstart animated fadeInUp visible">Spartan Hackers</h2>
-						<!-- Logo
-                          <img class="logo" src="./img/logo.png" alt="">
-                          <img class="logo-mobile" src="./img/logo-mobile.png" alt="">
-						-->
-					</a>
-				</div>
-				<div id="main-nav" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right nav-tour">
-                        <!--TODO: fix carousel javascript in main
-                        <li><a data-target="#owl-wrapper" data-slide-to="0" class="active">Home</a></li>
-                        <li><a data-target="#owl-wrapper" data-slide-to="1">Subscribe</a></li>
-                        <li><a data-target="#owl-wrapper" data-slide-to="2">About</a></li>
-                        <li><a data-target="#owl-wrapper" data-slide-to="3">Contact</a></li>
-                        <li><a data-target="#owl-wrapper" data-slide-to="4">Features</a></li>
-                        -->
-                        <li><a class="active">Home</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="nav_border"></div>
-		</nav>
-
-		<!-- General Section -->
-		<section class="home section fullscreen site-main" style="min-height: 805px;">
-			<div class="section-container">
-				<div class="page-container" style="width: 1436px;">
-                    <div id="my-carousel" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-						<div id="owl-wrapper" class="owl-wrapper-outer carousel" data-ride="carousel" data-interval="false">
-                            <div class="owl-wrapper carousel-inner" style="width: 14360px; left: 0px; display: block;">
-
-                                <!-- Home Section -->
-                                <div class="item owl-item active" style="width: 1436px;">
-                                    <div>
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-10 col-md-offset-1">
-                                                    <div class="slide-content">
-                                                        <div id="counter" class="countdown onstart animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="1000" data-countdown="2018/9/4 18:00:00">
-                                                            <div class="counter-container">
-                                                                <div class="counter-box first">
-                                                                    <div class="number">0</div>
-                                                                    <span>Day</span>
-                                                                </div>
-                                                                <div class="counter-box">
-                                                                    <div class="number">00</div>
-                                                                    <span>Hours</span>
-                                                                </div>
-                                                                <div class="counter-box">
-                                                                    <div class="number">00</div>
-                                                                    <span>Minutes</span>
-                                                                </div>
-                                                                <div class="counter-box last">
-                                                                    <div class="number">00</div>
-                                                                    <span>Seconds</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="color-white onstart animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="1000">Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State Univesity.  Welcome to the club: you're in the right place.</h3>
-                                                        <a href="mailto:webmaster.spartanhackers@gmail.com?subject=From%20The%20Site&body=Sign%20me%20up%20for%20the%20newsletter%20this%20instant!" class="border-button go-slide onstart animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="1200" data-slide="2">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Subscribe Section -->
-                                <div class="item owl-item" style="width: 1436px;">
-                                    <div>
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-10 col-md-offset-1">
-                                                    <div class="section-header color-white">
-                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">Subscribe To Our Newsletter</h2><!-- END TITLE -->
-                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
-                                                    </div>
-                                                    <div class="slide-content">
-                                                        <p class="animated" data-animation="fadeInUp" data-animation-delay="1200">Lorem
-                                                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                                                        commodo consequat.</p>
-                                                        <!-- Subscribe Form -->
-                                                        <div class="form animated" data-animation="fadeInUp" data-animation-delay="1400">
-                                                            <div class="form-container">
-                                                                <div class="page-section" id="signup">
-                                                                    <form class="subscription-form mailchimp-form" method="post" id="mc-form" novalidate="true">
-                                                                        <input id="email" class="border-radius-22 no-bottom-margin" name="EMAIL" placeholder="Enter Your Email Address" type="email">
-                                                                        <button type="submit" id="subscribebtn" class="border-button no-bottom-margin">Subscribe</button>
-                                                                    </form>
-                                                                    <p class="error-message"></p>
-                                                                    <p class="success-message"></p>
-                                                                </div><!--end page section -->
-                                                            </div><!-- end form container -->
-                                                        </div><!-- end Subscribe Form -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- About Section -->
-                                <div class="item owl-item" style="width: 1436px;">
-                                    <div>
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-10 col-md-offset-1">
-                                                    <div class="section-header">
-                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">About Us</h2><!-- END TITLE -->
-                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
-                                                    </div>
-                                                    <div class="slide-content animated" data-animation="fadeInUp" data-animation-delay="1200">
-                                                        <p>Lorem ipsum dolor sit amet, ne qui animal regione 
-                                                        adversarium, ferri nonumes signiferumque qui no, errem doming persecuti 
-                                                        pro at. At sit suavitate consectetuer. Ad nec vide tincidunt. An esse 
-                                                        docendi his, pro eius dicta dicit id.</p>
-                                                        <p>Ad quot facilisis conceptam pro. Per omnis movet ei. Vis 
-                                                        tation euismod cu, cu quod dolorem mediocritatem qui, qui suscipit 
-                                                        vulputate eloquentiam in. His malis simul percipitur id. In nam graece 
-                                                        nostrum deserunt, eos sonet omittam expetenda ei. Ei sed paulo nonumes 
-                                                        petentium.</p>
-                                                        <p>Ad quot facilisis conceptam pro. Per omnis movet ei. Vis 
-                                                        tation euismod cu, cu quod dolorem mediocritatem qui, qui suscipit 
-                                                        vulputate eloquentiam in. His malis simul percipitur id.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Contact Section -->
-                                <div class="item owl-item" style="width: 1436px;">
-                                    <div>
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-10 col-md-offset-1">
-                                                    <div class="section-header">
-                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">Get In Touch</h2><!-- END TITLE -->
-                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
-                                                    </div>
-                                                    <div class="slide-content">
-                                                        <p class="animated" data-animation="fadeInUp" data-animation-delay="1200">Lorem
-                                                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                                                        commodo consequat.</p>
-                                                        <!-- START CONTACT FORM -->
-                                                        <form method="post" action="send-mail.php" class="contact-form">
-                                                            <div class="row">
-                                                                <div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="1400">
-                                                                    <input name="name" placeholder="Name" class="required" type="text">
-                                                                </div>
-                                                                <div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="1500">
-                                                                    <input name="email" placeholder="Email address" class="contact-form-email required" type="email">
-                                                                </div>
-                                                                <div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="1600">
-                                                                    <input name="subject" placeholder="Subject" class="contact-form-subject" type="text">
-                                                                </div>
-                                                            </div>
-                                                            <textarea name="message" placeholder="Message" class="required animated" data-animation="fadeInUp" data-animation-delay="1800" rows="7"></textarea>
-                                                            <div class="response-message"></div>
-                                                            <button class="border-button animated" data-animation="fadeInUp" data-animation-delay="2000" type="submit" id="submit" name="submit">Send Message</button>
-                                                        </form><!-- END CONTACT FORM -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Features Section -->
-                                <div class="item owl-item" style="width: 1436px;">
-                                    <div>
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-10 col-md-offset-1">
-                                                    <div class="tour-header">
-                                                        <h2 class="section-title animated" data-animation="fadeInUp" data-animation-delay="800">Amazing Features</h2><!-- END TITLE -->
-                                                        <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="1000"><span></span></div>
-                                                    </div>
-                                                    <div class="slide-content">
-
-                                                        <!-- Service -->
-                                                        <div class="col-md-4 service animated" data-animation="fadeInLeft" data-animation-delay="1300">
-                                                            <div class="service-icon">
-                                                                <i class="fa fa-book"></i>
-                                                            </div>
-                                                            <h3>Well Documented</h3>
-                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit
-                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                                            cupidatat non proident.</p>
-                                                        </div>
-
-                                                        <!-- Service -->
-                                                        <div class="col-md-4 service animated" data-animation="fadeInUp" data-animation-delay="1200">
-                                                            <div class="service-icon">
-                                                                <i class="fa fa-mobile"></i>
-                                                            </div>
-                                                            <h3>Fully Responsive</h3>
-                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit
-                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                                            cupidatat non proident.</p>
-                                                        </div>
-
-                                                        <!-- Service -->
-                                                        <div class="col-md-4 service animated" data-animation="fadeInRight" data-animation-delay="1300">
-                                                            <div class="service-icon">
-                                                                <i class="fa fa-gift"></i>
-                                                            </div>
-                                                            <h3>Amazing Features</h3>
-                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit
-                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                                            cupidatat non proident.</p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-						</div>
-					</div><!-- end of .owl-carousel -->
-				</div>
-			</div>
-		</section>
-
-		<!-- Overlay -->
-		<div class="overlay">
-			<div class="overlay-color gradient-1 opacity-80"></div>
-			<div class="overlay-image cover-background" style="background-image:url('./img/eb-background.jpg');"></div>
-		</div>
-
-		<!-- Social Icons -->
-		<nav class="socials-icons onstart animated fadeIn visible" data-animation="fadeIn" data-animation-delay="1400">
-			<ul>
-				<li><a href="https://www.facebook.com/hack.at.state/"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="https://twitter.com/spartanhackers"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="https://www.youtube.com/channel/UCEsVXKr2P-el9TugNDmwj_g"><i class="fa fa-youtube"></i></a></li>
-				<li><a href="#"><i class="fa fa-meetup"></i></a></li>
-				<li><a href="https://csemsu.slack.com/signup"><i class="fa fa-slack"></i></a></li>
-				<li><a href="https://trello.com/spartanhackers"><i class="fa fa-trello"></i></a></li>
-				<li><a href="https://github.com/SpartanHackers"><i class="fa fa-github"></i></a></li>
-				<li><a href="https://github.com/SpartanHackers/spartancs.github.io"><i class="fa fa-html5"></i></a></li>
-				<li><a href="#"><i class="fa fa-apple"></i></a></li>
-				<li><a href="#"><i class="fa fa-android"></i></a></li>
-			</ul> 
-		</nav>
-
-		<!-- JS -->
-		<script type="text/javascript" src="./js/jquery.js"></script>
-		<script type="text/javascript" src="./js/bootstrap.js"></script>
-		<script type="text/javascript" src="./js/plugins.js"></script>
-		<script type="text/javascript" src="./js/main.js"></script>
-
-        <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 3px; z-index: 10000; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; display: none; opacity: 0;">
-            <div style="position: relative; top: 0px; float: right; width: 3px; height: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;" class="nicescroll-cursors"></div>
+    
+<div id="home" class="home-parallax text-center" >
+    
+<!--    <span style="height: 435px;width: 435px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>-->
+    <div class="row" style="padding-top: 10%;padding-bottom: 10%">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="center">
+                
+            <h1><b>MICHIGAN STATE</b> UNIVERSITY</h1>
+              <h1 id="word">
+                <span class="letter">S</span>
+                <span class="letter">P</span>
+                <span class="letter">A</span>
+                <span class="letter">R</span>
+                <span class="letter">T</span>
+                <span class="letter">A</span>
+                <span class="letter">N</span>
+                <span class="letter">.</span>
+                <span class="letter">H</span>
+                <span class="letter">A</span>
+                <span class="letter">C</span>
+                <span class="letter">K</span>
+                <span class="letter">E</span>
+                <span class="letter">R</span>
+                <span class="letter">S</span>
+              </h1>
+              <div id="test"></div>
+            </div>
         </div>
-	</body>
+    </div>
+
+    <div class="row text-right">
+        <a class="down-arrow" href="#about">
+            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
+        </a>
+    </div>
+</div>
+
+<div id="about" class="bg-about text-center">
+    
+    <h3 class="text-left header-space" data-aos="fade-in">About</h3>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8">
+            <h3 class="text-left" data-aos="fade-in">Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.
+            </h3>
+            <br>
+            <h3 class="text-left" data-aos="fade-in">Spartan Hackers hosts workshops to build skills within the community and organizes efforts to attend and represent Michigan State University at collegiate hackathons around the nation. 
+            </h3>
+            <br>
+            <h3 class="text-left" data-aos="fade-in">
+            A hackathon provides the opportunity for participants to demonstrate their knowledge in computer software and hardware development by building an application, or a “hack”, and compete for prizes.
+            </h3>
+        </div>
+        
+        
+    </div>
+
+    <div class="row text-right">
+        <a class="down-arrow" href="#join">
+            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: #2f2f2f"></span>
+        </a>
+    </div>
+</div>
+
+<div id="join" class="bg-skills text-center">
+    <h3 class="text-left header-space" data-aos="fade-in">How to Join</h3>
+    <div class="row" data-aos="fade-in" style="padding-left: 15%;padding-right: 15%">
+        <h1><b>COME OUT TO EVENTS!</b></h1>
+        <br>
+        <h3>Anyone with a computer and desire to learn can become a hacker. We have weekly meetings and all are invited!</h3>
+    </div>
+    <div class="row text-right">
+        <a class="down-arrow" href="#events">
+            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
+        </a>
+    </div>
+</div>
+    
+<div class="bg-linebreak">
+    <div class="row">
+        <hr>
+    </div>
+</div>   
+
+<div id="events" class="bg-skills text-center">
+    <h3 class="text-left header-space" data-aos="fade-in">Upcoming Events</h3>
+    
+    <div class="row" data-aos="fade-in" >
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center" style="margin-bottom: 5%">
+            <div style="color: dimgrey; border-width: thin;padding: 40px; background-color: white; height: 480px; border-radius: 5px">
+                <h2>First Event!</h2>
+                <h6>WORKSHOP</h6>
+                <hr>
+                <h4>09/11/2018</h4>
+                <hr>
+                <a href="https://www.facebook.com/events/856181041257245/" style="color: dimgrey;"><p><b>RSVP HERE</b></p></a>
+                <p>Spartan Hacker's first workshop of the semester will be How to Hackathon! Come learn what a hackathon is and how you can get involved! After learning about hackathons stay and get help submitting applications for upcoming hackathons in the midwest! Don't forget there will also be pizza and pop sponsored by Spartan Innovations! Hope to see everyone there!</p>
+            </div>
+        </div>
+    
+   
+  
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center" style="margin-bottom: 5%">
+            <div style="color: dimgrey; border-width: thin;padding: 40px; background-color: white; height: 480px;border-radius: 5px">
+                <h2>Grizzhacks 3</h2>
+                <h6>HACKATHON</h6>
+                <hr>
+                <h4>09/22/2018</h4>
+                <hr>
+                 <a href="http://grizzhacks.com/" style="color: dimgrey;"><p><b>APPLY HERE</b></p></a>
+                <p>GrizzHacks will bring together the greatest young minds for 24 hours of excitement and technological passion. Compete against your peers and other guests in a two day development challenge! There will also be plenty of time to interact with professional mentors and engineers, meet recruiters, and listen to great tech talks...</p>
+            </div>
+        </div>
+ 
+
+ 
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center" style="margin-bottom: 5%">
+            <div style="color: dimgrey; border-width: thin;padding: 40px; background-color: white; height: 480px;border-radius: 5px">
+                <h2>MHacks 11</h2>
+                <h6>HACKATHON</h6>
+                <hr>
+                <h4>10/12/2018</h4>
+                <hr>
+                <a href="https://mhacks.org/" style="color: dimgrey"><p><b>APPLY HERE</b></p></a>
+                <p>MHacks is a 36-hour hackathon run by University of Michigan students. At MHacks, we want to help you turn your ideas into reality. You're welcome to come with or without a team. We'll provide you with all the resources you need to help you work on something cool or learn new skills. You'll have the freedom to create...</p>
+            </div>
+        </div>
+    </div>
+    <div class="row text-right">
+        <a class="down-arrow" href="#eventInfo">
+            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
+        </a>
+    </div>
+</div>
+    
+<div id="eventInfo" class="bg-experience">
+    <h3 class="text-left header-space" data-aos="fade-in">Event Info</h3>
+
+    <div class="row text-center" data-aos="fade-in">
+        <div style="padding-bottom: 7%">
+            <h1 style="color: #246959; font-size: 250%; padding-bottom: 50px"><b>Total Number of Hosted Events</b></h1>
+            <h1 style="color: #246959; font-size: 650%"><b>50+</b></h1>
+        </div>
+        <hr>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
+            <h1><b>Workshop</b></h1>
+            <h1>100+</h1>
+            <h3>Total Attendees</h3>
+            
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
+            <h1><b>Hackathon</b></h1>
+            <h1>100+</h1>
+            <h3>Total Attendees</h3>
+            
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
+            <h1><b>Social</b></h1>
+            <h1>100+</h1>
+            <h3>Total Attendees</h3>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+     
+    <div class="row" data-aos="fade-in" style="padding-left: 15%">
+        <h3>Workshop</h3>
+        <h4>work·shop</h4>
+        <h5><i>/ˈwərkˌSHäp/</i></h5>
+        <p>noun</p>
+        <p>noun: workshop; plural noun: workshops</p>
+        <p>a meeting at which a group of people engage in intensive discussion and activity on a particular subject or project.</p>
+        <p>synonyms: study group, discussion group, seminar, class</p>
+    </div>
+    <div class="row" data-aos="fade-in" style="padding-left: 15%">
+        <h3>Hackathon</h3>
+        <h4>hack·a·thon</h4>
+        <h5><i>/ˈhakəˌTHän/</i></h5>
+        <p>noun informal</p>
+        <p>noun: hackathon; plural noun: hackathons</p>
+        <p>an event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming.</p>
+        <p>synonyms: there are none because a hackathon is most unique exerience you'll ever have</p>
+    </div>
+    <div class="row" data-aos="fade-in" style="padding-left: 15%">
+        <h3>Social</h3>
+        <h4>so·cial</h4>
+        <h5><i>/ˈsōSHəl/</i></h5>
+        <p>noun</p>
+        <p>noun: social; plural noun: socials</p>
+        <p>an informal social gathering, especially one organized by the members of a particular club or group.</p>
+        <p>synonyms: party, gathering, function, get-together, soirée</p>
+    </div>
+    
+    
+    <div class="row text-right">
+        <a class="down-arrow" href="#eboard">
+            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: #2f2f2f"></span>
+        </a>
+    </div>
+    
+</div>
+
+<div id="eboard" class="bg-eboard text-center">
+    <hr>
+    <br>
+    <h3 class="text-left header-space" data-aos="fade-in">Our E-Board</h3>
+    
+    <div class="row" data-aos="fade-in">
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
+            <span style="height: 120px;width: 120px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>
+<!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
+           <h6>President</h6>
+            <h6>Julian Somali</h6>
+            <p>"I organize efforts and transportation to go to various hackathons"</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
+            <span style="height: 120px;width: 120px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>
+<!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
+            <h6>Vice President</h6>
+            <h6>Peter Carras</h6>
+            <p>"I run and plan e-board meetings"</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
+            <span style="height: 120px;width: 120px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>
+<!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
+            <h6>VP.Software</h6>
+            <h6>William Huynh</h6>
+            <p>"I made this website"</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
+            <span style="height: 120px;width: 120px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>
+<!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
+           <h6>VP.Finance</h6>
+            <h6>Matt Dennis</h6>
+            <p>"I maintain the budget and inform the e-board of its status"</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px"> 
+            <span style="height: 120px;width: 120px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>
+<!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
+            <h6>VP.Media</h6>
+                <h6>Will Johnston</h6>
+            <p>I make all the logos and take photos and videos of events</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
+            <span style="height: 120px;width: 120px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>
+<!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
+           <h6>VP.Outreach</h6>
+            <h6>Jonathon Somali</h6>
+            <p>"I send emails with interest forms and event announcements"</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
+            <span style="height: 120px;width: 120px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>
+<!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
+            <h6>VP.Education</h6>
+            <h6>Jana Holderbaugh</h6>
+            <p>"I build the workshop schedule for the semester"</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <div class="row text-right">
+        <a class="down-arrow" href="#sponsors">
+            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
+        </a>
+    </div>
+</div>    
+    
+<div id="sponsors" class="bg-experience text-center">
+    <h3 class="text-left header-space" data-aos="fade-in">Sponsors</h3>
+    
+    <div class="row" data-aos="fade-in">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+            <img src="images/asmsu-logo_1446832065892_26365723_ver1.0_640_480.png" style="width: 100%; padding-top: 20px;padding-bottom: 20px">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img src="images/sdafadgsd.jpeg" style="width: 100%; padding-top: 20px;padding-bottom: 20px">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img src="images/Spartan-Innovations-Logo.png" style="width: 100%; padding-top: 20px;padding-bottom: 20px">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="text-center" data-aos="fade-in">
+        <h6>Interested in giving tech talks, marketing your company, or helping students attend conferences? Consider becoming a corporate sponsor of Spartan Hackers! For more information about sponsorship, contact <a href="mailto:webmaster.spartanhackers@gmail.com?Subject=My%20Company%20is%20Intresteed%20in%20Sponsoring%20Spartan%20Hackers" target="_top"><i>spartanhackers@gmail.com</i></a></h6>
+    </div>
+</div>    
+    
+<footer class="bg-footer text-center">
+    <h6>Michigan State University Spartan Hackers</h6>
+</footer>
+    
+<script> 
+
+//smooth transitions    
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, a[href='#home'], a[href='#about'], a[href='#join'], a[href='#eboard'], a[href='#eventInfo'],a[href='#events'], a[href='#sponsors']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+    
+//transparentancy change navbar
+$(function() {
+    var header = $(".navbar");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});    
+    
+Letters = function() {
+  this.lettersDOM = null;
+  this.active = null;
+  this.letters = [];
+  this.alphabet = ["a", "b", "c", "d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","i","u","v","w","x","y","z","~","&","|","^","ç","@","]","[","{","}","ù","*","µ","¤","$","£","€","°",")","(","+","-","/","<",">","²","`","é","è","1","2","3","4","5","6","7","8","9","0"
+  ];
+
+  return this;
+};
+
+Letters.prototype.init = function( word ) {
+  
+  this.lettersDOM = document.querySelectorAll('.letter');
+  this.active = true;
+  var i;
+  var nextChar;
+  var lettersMax = this.lettersDOM.length;
+  
+  for ( i = 0; i < this.lettersDOM.length; i++ ) {
+    
+    if ( word.charAt( i ) != "" )
+      nextChar = word.charAt( i );
+    else 
+      nextChar = false;
+    
+    this.letters.push( new Letter( this.lettersDOM[ i ],  nextChar ) );
+    
+  }
+  
+  if ( word.length > lettersMax ) {
+    
+    var wordContainer = document.getElementById("word");
+
+    for ( i = lettersMax; i < word.length; i++ ) {
+      var letterSpan = document.createElement('span');
+      letterSpan.innerHTML = "";
+      letterSpan.classList.add('letter');
+      wordContainer.appendChild( letterSpan );
+      this.letters.push( new Letter( letterSpan,  word.charAt( i ) ) );
+    }
+  }
+  
+  this.animate();
+  
+  return this;
+  
+};
+
+Letters.prototype.animate = function() {
+  var i;
+  var random;
+  var char;
+  
+  if ( this.active ) {
+ 
+    window.requestAnimationFrame( this.animate.bind(this) );
+    
+    var indexes = [];
+
+    for ( i = 0; i < this.letters.length; i++ ) {
+    
+      var current = this.letters[ i ];  
+      
+      if ( !current.isDead ) {     
+        random = Math.floor(Math.random() * (this.alphabet.length - 0));
+        char = this.alphabet[ random ]; 
+        current.render( char );
+      } else {
+        indexes.push( i );
+      }
+    } 
+    
+    for ( i = 0; i < indexes.length; i++ ) {
+      this.letters.splice( indexes[ i ], 1 );
+    }
+    
+    if ( this.letters.length == 0 ) {
+      this.stop();
+    }
+  }
+};
+
+Letters.prototype.start = function( word ) {
+  this.init( word );
+};
+
+Letters.prototype.stop = function() {
+  this.active = false;
+};
+
+Letter = function( DOMElement, nextChar ) {
+  
+  var scope = this;
+  
+  this.DOMEl = DOMElement;
+  this.char = DOMElement.innerHTML;
+  this.next = nextChar;
+  this.speed = Math.floor(Math.random() * (600 - 10) );
+  this.total = 0;
+  this.duration = 2000;
+  this.animating = true;
+  this.isDead = false;
+  
+  this.timer = setInterval(function() { 
+    if ( scope.animating === true ) {
+      scope.total += scope.speed;
+    } 
+    scope.animating = !scope.animating;
+  }, this.speed);
+
+  this.animate();
+  
+  return this;
+ 
+};
+
+Letter.prototype.animate = function() {
+  var i;
+  var random;
+  
+  if ( !this.isDead ) {
+    window.requestAnimationFrame( this.animate.bind(this) );
+  }
+  
+  
+  if ( this.total < this.duration ) {
+    
+    if ( this.animating ) {
+      this.DOMEl.innerHTML = this.char;
+    }
+      
+  } else {
+    this.isDead = true;
+    
+    if ( !this.next ) {
+      var parent = document.getElementById('word');
+      parent.removeChild( this.DOMEl );
+      return;
+    }
+    
+    this.DOMEl.innerHTML = this.next;
+  }
+};
+
+Letter.prototype.render = function( char ) {
+  
+  if ( !this.animating ) {
+    this.char = char;
+  }
+  
+};
+
+var word = [ "SPARTAN.HACKERS", "COMP.SCI.CLUB" ];
+var nextWord = 1;
+
+var letters = new Letters();
+
+setTimeout( function() {
+  
+  letters.start( word[ nextWord ] );
+  
+  setInterval(function() {
+    nextWord++;
+    if ( nextWord >= word.length )
+      nextWord = 0;
+    
+    letters.start( word[ nextWord ] );
+  }, 10000);
+  
+}, 2000);
+
+
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
 </html>
