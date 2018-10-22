@@ -3,6 +3,12 @@
 <head>
 <title>MSU SPARTAN HACKERS</title>
     
+  <meta property="og:url"           content="https://spartanhackers.github.io/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Spartan Hackers" />
+  <meta property="og:description"   content="Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University." />
+  <meta property="og:image"         content="images/shoutline.png" />
+    
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/shoutline.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,6 +23,20 @@
     
 <body>
 
+<!--
+Facebook like button setup
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+    
+-->
+    
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -28,8 +48,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#join">JOIN</a></li>
-        <li><a href="#events">UPCOMING EVENTS</a></li>
-          <li><a href="#eventInfo">EVENT INFO</a></li>
+       
+        <li><a href="#eventInfo">EVENTS</a></li>
         <li><a href="#eboard">E-BOARD</a></li>
         <li><a href="#sponsors">SPONSORS</a></li>
       </ul>
@@ -93,7 +113,7 @@
             </h4>
             <br>
             <h4 class="text-left" data-aos="fade-in">
-            A hackathon provides the opportunity for participants to demonstrate their knowledge in computer software and hardware development by building an application, or a “hack”, and compete for prizes.
+            A hackathon provides the opportunity for participants to demonstrate their knowledge in computer software and hardware development by building an application, a “hack”, and compete for prizes.
             </h4>
         </div>
         
@@ -120,70 +140,13 @@
     </div>
     <div class="row" data-aos="fade-in" style="padding-left: 15%;padding-right: 15%">
         <br>
-        <h3>Also Like us on Facebook. This will notified you for upcoming events sooner.</h3>
+        <h3>Also Like us on Facebook. This will notified you for upcoming events!</h3>
     </div>
 <!--
     
     <div class="fb-like" data-href="https://www.facebook.com/hack.at.state/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
     
 -->
-    <div class="row text-right">
-        <a class="down-arrow" href="#events">
-            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
-        </a>
-    </div>
-</div>
-    
-<div class="bg-linebreak">
-    <div class="row">
-        <hr>
-    </div>
-</div>   
-
-<div id="events" class="bg-skills text-center">
-    <h3 class="text-left header-space" data-aos="fade-in">Upcoming Events</h3>
-    
-    <div class="row" data-aos="fade-in" >
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-center" style="margin-bottom: 5%">
-            <div style="color: dimgrey; border-width: thin;padding: 40px; background-color: white; height: 500px; border-radius: 5px">
-                <h2>Personalize your Website!</h2>
-                <h6>HACK NIGHT</h6>
-                <hr>
-                <h4>09/25/2018</h4>
-                <hr>
-                <a href="https://www.facebook.com/events/726306877729556/" style="color: dimgrey;"><p><b>RSVP HERE</b></p></a>
-                <p>Our next event will be more hands on and individualized. If you want to build on your website from last event then come on out! We will be there to answer any questions you have, help you envision your site, and even show you neat tricks. As always, pizza and pop provided by Spartan Innovations.</p>
-            </div>
-        </div>
-    
-   
-  
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-center" style="margin-bottom: 5%">
-            <div style="color: dimgrey; border-width: thin;padding: 40px; background-color: white; height: 500px;border-radius: 5px">
-                <h2>Grizzhacks 3</h2>
-                <h6>HACKATHON</h6>
-                <hr>
-                <h4>09/22/2018</h4>
-                <hr>
-                 <a href="http://grizzhacks.com/" style="color: dimgrey;"><p><b>APPLY HERE</b></p></a>
-                <p>GrizzHacks will bring together the greatest young minds for 24 hours of excitement and technological passion. Compete against your peers and other guests in a two day development challenge! There will also be plenty of time to interact with professional mentors and engineers, meet recruiters, and listen to great tech talks...</p>
-            </div>
-        </div>
- 
-
- 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-center" style="margin-bottom: 5%">
-            <div style="color: dimgrey; border-width: thin;padding: 40px; background-color: white; height: 500px;border-radius: 5px">
-                <h2>MHacks 11</h2>
-                <h6>HACKATHON</h6>
-                <hr>
-                <h4>10/12/2018</h4>
-                <hr>
-                <a href="https://mhacks.org/" style="color: dimgrey"><p><b>APPLY HERE</b></p></a>
-                <p>MHacks is a 36-hour hackathon run by University of Michigan students. At MHacks, we want to help you turn your ideas into reality. You're welcome to come with or without a team. We'll provide you with all the resources you need to help you work on something cool or learn new skills. You'll have the freedom to create...</p>
-            </div>
-        </div>
-    </div>
     <div class="row text-right">
         <a class="down-arrow" href="#eventInfo">
             <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
@@ -202,13 +165,13 @@
         <hr>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
             <h1><b>Workshop</b></h1>
-            <h1>600+</h1>
+            <h1>700+</h1>
             <h3>Total Attendees</h3>
             
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
             <h1><b>Hackathon</b></h1>
-            <h1>300+</h1>
+            <h1>350+</h1>
             <h3>Total Attendees</h3>
             
         </div>
@@ -313,7 +276,7 @@
 <!--            <img src="images/workshopicon.png" style="width: 80%; padding: 10px">-->
             <h6>VP.Education</h6>
             <h6>Jana Holderbaugh</h6>
-            <p>"I build the workshop schedule for the semester"</p>
+            <p>"I build the workshop schedule for the year"</p>
         </div>
     </div>
     <br>
@@ -552,7 +515,7 @@ Letter.prototype.render = function( char ) {
   
 };
 
-var word = [ "SPARTAN.HACKERS", "NOT.SPARTAHACK", "SPARTAN.HACKERS", "BETTER.CS.CLUB."];
+var word = [ "SPARTAN.HACKERS", "A.COMP.SCI.CLUB", "IDEA.BUILD.WIN", "NOT.SPARTAHACK", "SPARTAN.HACKERS", "GET.A.JOB.TODAY","GET.FREE.SWAG!.", "EAT.SLEEP.CODE!.", "BETTER.CS.CLUB." ];
 var nextWord = 1;
 
 var letters = new Letters();
