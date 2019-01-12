@@ -243,3 +243,7 @@ and (min-width : 1224px) {
 .header-space{
     padding-bottom: 4%;
 }
+
+.definitions *{
+    font-weight: 500;
+}
