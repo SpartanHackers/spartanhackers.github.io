@@ -247,3 +247,12 @@ and (min-width : 1224px) {
 .definitions *{
     font-weight: 500;
 }
+
+.portrait {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid;
+    border-width: thin;   
+}
