@@ -53,7 +53,7 @@ and (min-width : 1224px) {
 
 .home-parallax {
     /* The image used */
-    background-image: linear-gradient(rgb(24,69,59,.8),rgb(61, 0, 102,.8)),url(images/BK1.jpg);
+    background-image: linear-gradient(rgb(24,69,59,.8),rgb(61, 0, 102, .5)),url(images/BK1.jpg);
 
     /* Full height */
 /*    height: 100%; */
@@ -196,10 +196,10 @@ and (min-width : 1224px) {
     padding-right: 10%;
 }
 .bg-footer { 
-    background-color: #2f2f2f; /* Black Gray */
+    background-color: black; /* Black Gray */
     color: #fff;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: .5%;
+    padding-bottom: .5%;
     padding-left: 10%;
     padding-right: 10%;
 }    
@@ -245,14 +245,15 @@ and (min-width : 1224px) {
 }
 
 .definitions *{
-    font-weight: 500;
+    font-weight: 250;
 }
 
 .portrait {
     height: 120px;
     width: 120px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: inline-block;
     border: solid;
-    border-width: thin;   
+    border-width: thick;   
+
 }
