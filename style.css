@@ -255,5 +255,13 @@ and (min-width : 1224px) {
     display: inline-block;
     border: solid;
     border-width: thick;   
+}
 
+.linkedin{
+    color:white;
+    letter-spacing:2px;
+    font-weight:200;
+}
+.linkedin:hover{
+    color:green;
 }
