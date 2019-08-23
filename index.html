@@ -1,574 +1,635 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>MSU SPARTAN HACKERS</title>
+    <title>Spartan Hackers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-  <meta property="og:url"           content="https://spartanhackers.github.io/" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Spartan Hackers" />
-  <meta property="og:description"   content="Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University." />
-  <meta property="og:image"         content="images/shoutline.png" />
+    <meta property="og:url"           content="https://spartanhackers.github.io/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Spartan Hackers" />
+    <meta property="og:description"   content="Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University." />
+    <meta property="og:image"         content="images/shoutline.png" />
     
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="images/shoutline.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/shoutline.png">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+        body {
+            position: relative; 
+            color: white;
+        }
+        .container {
+            padding-top:100px;
+            padding-bottom:100px
+        }
+        nav {
+            background-color: rgb(0, 0, 0, .40);
+        }
+        .navbar-brand {
+            letter-spacing: 25%;
+            font-weight: 200;
+        }
+        .navbar-brand:hover {
+            color: #1abc9c;
+        }
+        .nav-item {
+            padding-right: 30px;
+            font-weight: 200;
+            font-size: 14px;
+        }
+        .nav-link {
+            letter-spacing: 5px;
+        }
+        .nav-link:hover {
+            color: #1abc9c;
+        }
+        .navbar-brand {
+            letter-spacing: 5px;
+            padding-left: 30px;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            letter-spacing: 5px;
+            padding-bottom: 25px;
+        }
+        .display-2 {
+            letter-spacing: 10px;
+        }
+        p {
+            letter-spacing: 1px;
+            padding-bottom: 25px;
+            color: lightgray;
+        }
+        .card {
+            background-color: rgb(24, 69, 59);
+            border-color: white;
+        }
+        .card-link {
+            color: white;
+        }
+        .card-link:hover {
+            color: grey;
+        }
+        #home {
+            padding-top:100px;
+            padding-bottom:100px;
+/*            background-image: url(images/msuSkyView.jpg);*/
+            background-image: linear-gradient(rgba(0, 0, 0,.7),rgba(0, 0, 0,.7)),url("images/msuSkyView.jpg");
+            height: 800px;
+            
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #section1 {
+            background-color: black;
+        }
+        #section2 {
+            background-color: rgb(10, 10, 10);
+        }
+        #section3 {
+            background-color: black;
+        }
+        #section4 {
+            background-color: rgb(24, 69, 59);
+        }
+        #section5 {
+            background-color: rgb(10, 10, 10);
+        }
+        footer {
+            background-color: black;
+        }
+        ul {
+            list-style: none;
+            color: lightgray;
+        }
+        a {
+            color: white;
+            letter-spacing: 1px;
+        }
+        .text-divider {
+            background-color: white;
+            height: 10px;
+            width: 100px;
+            margin-bottom: 40px;
+        }
+        .divider {
+            background-color: rgb(24, 69, 59);
+            height: 20px;
+        }
+        .portrait {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            object-fit: cover;
+            display: inline-block;
+            border: solid;
+            border-width: thick; 
+            margin-bottom: 20px;
+        }
+        .portrait:hover {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            object-fit: cover;
+        }
+        .img-icon {
+            height: 200px;
+            width: 200px;
+        }
+        .icon-size {
+            height: 50px;
+        }
+        input[type=email]{
+          border: 2px solid white;
+          background-color: transparent;
+          padding: 10px;
+          color: white;
+        }
+        input[type=submit] {
+          background-color: #246959;
+          border: none;
+          color: white;
+          padding: 12px 30px;
+          text-decoration: none;
+          cursor: pointer;
+          margin: 20px;
+        }
+        input[type=submit]:hover {
+          background-color: #006059;
+        }
+    </style>
 </head>
-    
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
 
-<!--
-Facebook like button setup
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-    
--->
-    
-<!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-        
-      <a class="navbar-brand" data-aos="fade-in" href="#home">SPARTAN HACKERS</a>
-    </div>
-    <div class="collapse navbar-collapse" data-aos="fade-in" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#join">JOIN</a></li>
-       
-        <li><a href="#eventInfo">EVENTS</a></li>
-        <li><a href="#eboard">E-BOARD</a></li>
-        <li><a href="#sponsors">SPONSORS</a></li>
-      </ul>
-    </div>
-  </div>
+<nav id="nav" class="navbar navbar-expand-md fixed-top">
+    <a class="navbar-brand" href="#home" >SPARTAN HACKERS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">JOIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">SCHEDULE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section5">E-BOARD</a>
+        </li>
+    </ul>
+  </div>  
 </nav>    
-    
 
-    
-<div id="home" class="home-parallax text-center" >
-    
-<!--    <span style="height: 435px;width: 435px;border-radius: 50%;display: inline-block;border: solid;border-width: thin"></span>-->
-    <div class="row" style="padding-top: 10%;padding-bottom: 10%">
+<div id="home">
+    <div class="container text-center">
+        <h2><b>MIGHIGAN STATE</b> UNIVERSITY</h2>
+        <h1 class="display-2">SPARTAN HACKERS</h1> 
+        <h6>A group of students that learn more, collaborate better, and create projects.</h6>
         
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="center">
-                
-            <h1><b>MICHIGAN STATE</b> UNIVERSITY</h1>
-            
-              <h1 id="word">
-                <span class="letter">S</span>
-                <span class="letter">P</span>
-                <span class="letter">A</span>
-                <span class="letter">R</span>
-                <span class="letter">T</span>
-                <span class="letter">A</span>
-                <span class="letter">N</span>
-                <span class="letter">.</span>
-                <span class="letter">H</span>
-                <span class="letter">A</span>
-                <span class="letter">C</span>
-                <span class="letter">K</span>
-                <span class="letter">E</span>
-                <span class="letter">R</span>
-                <span class="letter">S</span>
-              </h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="row text-right">
-        <a class="down-arrow" href="#about">
-            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
-        </a>
-    </div>
-</div>
-
-    <!-- This uses the Mailchimp Signup embed HTML -->
-    <br>
+        
+    <!--     This uses the Mailchimp Signup embed HTML -->
     <div id="mailing">
-        <center>
-            <h1>
-                <b style="letter-spacing:2px;font-size:20px;">Subscribe to be the first to know about our events</b>
-            </h1>
-        </center>
+        <!--             Begin Mailchimp Signup Form -->
+
+        <div id="mc_embed_signup">
+            <form action="https://spartanhackers.us11.list-manage.com/subscribe/post?u=c4c0006c6308da6ea656d3c03&amp;id=35793dd476" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+                <div id="mc_embed_signup_scroll" class="form-inline justify-content-center">
+
+                    <input type="email" value="" name="EMAIL" id="mce-EMAIL" aria-required="true" placeholder=" ENTER MSU EMAIL">
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>     
+
+                    <!--                 real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_c4c0006c6308da6ea656d3c03_35793dd476" tabindex="-1" value="">
+                    </div>
+
+                    <br>
+
+                    <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button" >
+                </div>
+            </form>
+        </div>
+            
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);
+        </script> 
+        <!--            End mc_embed_signup-->
+        
+    </div> 
+        
     </div>
+        
+</div>
     
-    <!-- Begin Mailchimp Signup Form -->
-    <div id="mc_embed_signup">
-            <form action="https://spartanhackers.us11.list-manage.com/subscribe/post?u=c4c0006c6308da6ea656d3c03&amp;id=35793dd476" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" class="validate">
-                <center><div id="mc_embed_signup_scroll">
-
-            <div>
-                
-                <input type="email" value="" name="EMAIL" id="mce-EMAIL" aria-required="true" style="width:25%; border: 1px solid #1f325b;" placeholder=" Enter your email here">
-
-                <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: #1e542b;color: white;">
+<div class="divider">
+</div>
+    
+<div id="section1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="container">
+                    <h2>What is Spartan Hackers?</h2>
+                    <div class="text-divider"></div>
+                    <p>Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.</p>
+                    <p>To rephrase, we build cool tech projects by working with others.</p>
+                </div>
             </div>
-            <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-            </div></div></center></form></div>
-    
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4c0006c6308da6ea656d3c03_35793dd476" tabindex="-1" value=""></div>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-    <!--End mc_embed_signup-->
+        </div>
 
-<div id="about" class="bg-about text-center">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="container">
+                    <h2>What We Do?</h2>
+                    <div class="text-divider"></div>
+                    <h4>Hackathons</h4>
+                    <p>The majority of what we do is go to Hackathons! Hackathons are 24-48 hour coding competitions and the fastest way to build real projects. While you're hacking, you can get to know representatives from companies like Google, Facebook, Microsoft, and more! Plus, every hackathon is filled to the brim with free food.</p>
+                    <a href="https://devpost.com/"><u>Visit Devpost.com to see past Hackathons and projects!</u></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mx-auto text-center" style="padding-left: 150px;padding-right: 150px;">
+            <div class="col">
+                <img class="icon-size" src="images/Group.png" alt="Hackathon Logo">
+            </div>
+            <div class="col">
+                <img class="icon-size" src="images/Group%202.png" alt="Hackathon Logo">
+            </div>
+            <div class="col">
+                <img class="icon-size" src="images/Group%203.png" alt="Hackathon Logo">
+            </div>
+            <div class="col">
+                <img class="icon-size" src="images/Group%204.png" alt="Hackathon Logo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="container">
+                    <h4>Workshops</h4>
+                    <p>Spartan Hackers hosts events where students hang out, work on projects, share ideas, and learn about cool new technologies. We strive to create an environment where it's easy to meet some of the students at the forefront of innovation at MSU.</p> 
+                    <p>Previous Workshop Topics: Github Source Control, Microsoft Azure, Prep for the Technical Interview Algorithms, Hackerrank, Unity, HTML/CSS, iOS, and Android.</p> 
+                    <h4>Company Speakers</h4>
+                    <p>Spartan Hackers invites companies in the industry to come and share their experiences with us. These are also a great way to network with those companies and possibly land a full-time or internship position with them.</p> 
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div class="divider">
+</div>
     
-    <h3 class="text-left" data-aos="fade-in">About</h3>
-    <div class="row">
-        <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1">
+<div id="section2" >
+    <div class="container">
+        <h2>How can I join?</h2>
+        <div class="text-divider"></div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Attend Events!</h4>
+                <p>Anyone with a computer and desire to learn can become a hacker. We have weekly meetings and all are invited! </p>
+                <p>Most students require transportation for Hackathons. Bus requests are processed a week or two before a hackathon’s start date. Remember those with offical acceptance emails have priority seating. In some cases if you do not have an acceptance email you are still welcome to come if seating is available, we’ll let you know.</p>
+            </div>
+            <div class="col-sm-6">
+                <h4>Stay Connected!</h4>
+                <ul>
+                    <li>Follow us Facebook</li>
+                    <li>Join Our Mailing List</li>
+                    <li>Talk to a Spartan Hackers Member</li>
+                </ul>
+                <p>By doing all of these things you’ll be notified of all our events. Explore the computer science community, learn useful skills, and make friends along the way.</p>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8">
-            <h4 class="text-left" data-aos="fade-in">
-                Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.
-            </h4>
-            <br>
-            <h4 class="text-left" data-aos="fade-in">
-                Spartan Hackers hosts workshops to build skills within the community and organizes efforts to attend and represent Michigan State University at collegiate hackathons around the nation. 
-            </h4>
-            <br>
-            <h4 class="text-left" data-aos="fade-in">
-            A hackathon provides the opportunity for participants to demonstrate their knowledge in computer software and hardware development by building an application, a “hack”, and compete for prizes.
-            </h4>
-        </div>
+    </div>
+</div>
+    
+<div id="section3" >
+    <div class="container">
+    <h2>Schedule</h2>
+    <div class="text-divider"></div>
+    <h4>Tentative Events</h4>
+    <p>Workshops and Tech Talks we plan to host this school-year, 2019-2020, events dates may change or cancel</p>
+    <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Sign-in</th>
+        <th>Details on Facebook</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8/27/19</td>
+        <td>Sparticipation</td>
+        <td><a href="bit.ly/sparticipation"><u>bit.ly/sparticipation</u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>8/28/19</td>
+        <td>CSE Mixer</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>9/3/19</td>
+        <td>Welcome to Spartan Hackers</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>9/10/19</td>
+        <td>Design Thinking Challenge</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>9/12/19</td>
+        <td>Hacker Fellows</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>9/17/19</td>
+        <td>Applying to Hackathons</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>9/19/19</td>
+        <td>GE Healthcare</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>9/24/19</td>
+        <td>Game Night</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>10/1/19</td>
+        <td>Github Workshop</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>10/8/19</td>
+        <td>Unity Workshop</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>10/15/19</td>
+        <td>Web Development Workshop</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>10/22/19</td>
+        <td>Techical Interview Workshop</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>11/5/19</td>
+        <td>Python AI Workshop</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>11/12/19</td>
+        <td>Machine Learning Workshop</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>11/19/19</td>
+        <td>Eboard Elections</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+    </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
         
-        
-    </div>
-
-    <div class="row text-right">
-        <a class="down-arrow" href="#join">
-            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: #2f2f2f"></span>
-        </a>
+    <h4>Tentative Hackathons</h4>
+    <p>Hackathon we plan to attend this school-year, 2019-2020, dates and transportation status may change</p>
+    <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Transportation</th>
+        <th>Sign-up</th>
+        <th>Apply</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9/28/19</td>
+        <td>GrizzHacks</td>
+        <td>Unprovided</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>8/11/19</td>
+        <td>MHacks</td>
+        <td>Bus Provided</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>SpartaHack</td>
+        <td>On-Campus</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>1/24/20</td>
+        <td>Boilermake</td>
+        <td>Bus Provided</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+      <tr>
+        <td>2/28/20</td>
+        <td>HackIllinois</td>
+        <td>Bus Provided</td>
+        <td><a href=""><u></u></a></td>
+        <td><a href=""><u></u></a></td>
+      </tr>
+    </tbody>
+    </table>
     </div>
 </div>
-
-<div id="join" class="bg-skills text-center">
-    <h3 class="text-left header-space aos-init aos-animate" data-aos="fade-in">How to Join</h3>
-    <div class="row aos-init aos-animate" data-aos="fade-in" style="padding-left: 15%;padding-right: 15%">
-   
-       <h1><b>COME OUT TO EVENTS!</b></h1>
-       <br>
-       <br>
- 
-        <h3>Anyone with a computer and desire to learn can become a hacker. We have weekly meetings and all are invited!</h3>
-
-    </div>  
-    <div class="row aos-init aos-animate" data-aos="fade-in" style="padding-left: 15%;padding-right: 15%">
-        <h3>Also Like us on Facebook. This will notify you for upcoming events!</h3>
-    </div><br>
-    <br>
-
-<div class="row aos-init aos-animate" data-aos="fade-in">
-  <br>
-        <h4><a href="https://www.facebook.com/hack.at.state/" style="color:cornflowerblue;text-decoration: none; ;background-color: white; border: solid; padding:20px; border-width: thin; border-radius: 5px">SPARTAN HACKERS FACEBOOK</a></h4>
-    </div>
-<!-- <div class="row aos-init aos-animate" data-aos="fade-in">
-        <h4><a href="https://twitter.com/spartanhackers?lang=en" style="color: white; border: solid; padding:10px; border-width: thin; border-radius: 5px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SPARTAN HACKERS TWITTER</font></font></a></h4>
-    </div> -->
-<!--
     
-    <div class="fb-like" data-href="https://www.facebook.com/hack.at.state/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+<div class="divider">
+</div>
     
--->
-    <div class="row text-right">
-        <a class="down-arrow" href="#eventInfo">
-            <span class="glyphicon glyphicon-chevron-down aos-init aos-animate" data-aos="fade-in" style="color: white"></span>
+<div id="section4" >
+    <div class="container">
+    <h2>FAQ</h2>
+    <div class="text-divider"></div>
+    <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            What is hacking?
         </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          You're probably thinking of movies where hackers steal secrets from the FBI. That's not what we're about. To us, hacking means using cutting edge technology to create kick-ass projects. Go see Devpost.com it will give you have better understand of what kind of projects were talking about.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+            I missed the first meeting can I still join?
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Absolutely! You can find all of our events in the Spartan Hackers facebook page. No prior knowledge or experience is needed, so come say hi!
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+            What if I can't code?
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          No problem! As long as you're passionate about how technology can shape the future, you'll fit right in. We offer lots of events to help teach coding skills!
+        </div>
+      </div>
+    </div>
+    </div>
     </div>
 </div>
     
-<div id="eventInfo" class="bg-experience">
-    <h3 class="text-left header-space" data-aos="fade-in">Event Info</h3>
-
-    <div class="row text-center" data-aos="fade-in">
-        <div style="padding-bottom: 0%">
-            <h1 style="color: #246959; font-size: 250%; padding-bottom: 50px"><b>Events We Host!</b></h1>
+<div id="section5" >
+    <div class="container">
+        <h2>E-Board</h2>
+        <div class="text-divider"></div>
+        <div class="text-center">
+            <p>Join our team! By doing so you will have the opportunity to talk with students across michigan and connect with companies directly!</p>
+            <div class="row">
+                <div class="col-3">
+                    <h6>Advisor</h6>
+                    <img src="images/professional_photo.jpg" class="portrait">
+                    <p>Josh Nahum</p>
+                </div>
+                <div class="col-3">
+                    <h6>President</h6>
+                    <img src="images/will.jpg" class="portrait">
+                    <p>William Huynh</p>
+                </div>
+                <div class="col-3">
+                    <h6>Vice President</h6>
+                    <img src="images/peter.jpg" class="portrait">
+                    <p>Peter Carras</p>
+                </div>
+                <div class="col-3">
+                    <h6>Event Coordinator</h6>
+                    <img src="images/don.jpg" class="portrait">
+                    <p>Don Jayaweera</p>
+                </div>
+                <div class="col-3">
+                    <h6>Outreach</h6>
+                    <img src="images/craig.jpg" class="portrait">
+                    <p>Craig Smith</p>
+                </div>
+                <div class="col-3">
+                    <h6>Marketing</h6>
+                    <img src="images/lauren.jpg" class="portrait">
+                    <p>Lauren Prepejchal</p>
+                </div>
+                <div class="col-3">
+                    <h6>Webmaster</h6>
+                    <img src="images/jordan.jpg" class="portrait">
+                    <p>Jordan Bakke</p>
+                </div>
+                <div class="col-3">
+                    <h6>Treasurer</h6>
+                    <img src="images/matt.jpg" class="portrait">
+                    <p>Matt Maple</p>
+                </div>
+            </div>
         </div>
-        <hr>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
-            <h1><b>Workshops</b></h1>
-            <h1>30+/year</h1>
-            
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
-            <h1><b>Hackathons</b></h1>
-            <h1>8+/year</h1>
-            
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" style="padding-left: 5%;padding-right: 5%;color: #246959">
-            <h1><b>Socials</b></h1>
-            <h1>2+/year</h1>
-        </div>
     </div>
-    <br>
-    <hr>
-    <br>
-    <div class="row definitions">
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-aos="fade-in">
-        <h3>Workshop</h3>
-        <h4>work·shop</h4>
-        <h5><i>/ˈwərkˌSHäp/</i></h5>
-        <p>noun</p>
-        <p>noun: workshop; plural noun: workshops</p>
-        <p>a meeting at which a group of people engage in intensive discussion and activity on a particular subject or project.</p>
-        <p>synonyms: study group, discussion group, seminar, class</p>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-aos="fade-in">
-        <h3>Hackathon</h3>
-        <h4>hack·a·thon</h4>
-        <h5><i>/ˈhakəˌTHän/</i></h5>
-        <p>noun informal</p>
-        <p>noun: hackathon; plural noun: hackathons</p>
-        <p>an event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming.</p>
-        <p>synonyms: there are none because a hackathon is most unique exerience you'll ever have</p>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-aos="fade-in">
-        <h3>Social</h3>
-        <h4>so·cial</h4>
-        <h5><i>/ˈsōSHəl/</i></h5>
-        <p>noun</p>
-        <p>noun: social; plural noun: socials</p>
-        <p>an informal social gathering, especially one organized by the members of a particular club or group.</p>
-        <p>synonyms: party, gathering, function, get-together, soirée</p>
-    </div>
-    </div>
-    
-    
-    <div class="row text-right">
-        <a class="down-arrow" href="#eboard">
-            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: #2f2f2f"></span>
-        </a>
-    </div>
-    
 </div>
-
-<div id="eboard" class="bg-eboard text-center">
-    <hr>
-    <br>
-    <h3 class="text-left header-space" data-aos="fade-in">Our E-Board</h3>
     
-    <div class="row" data-aos="fade-in">
-        <!-- <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
-            <img src="images/" class="portrait">
-            <h6>Faculty Advisor</h6>
-            <h6>Josh Nahum</h6>
-        </div> -->
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
-            <img src="images/Image from iOS-3.jpg" class="portrait">
-            <h6>President</h6>
-            <h6>William Huynh</h6>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
-            <img src="images/Image from iOS-7.jpg" class="portrait">
-            <h6>Vice President</h6>
-            <h6>Peter Carras</h6>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
-            <img src="images/Image from iOS-5.jpg" class="portrait">
-            <h6>Software</h6>
-            <h6>Jordan Bakke</h6>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
-            <img src="images/Image from iOS.jpg" class="portrait"> 
-            <h6>Finance</h6>
-            <h6>Matthew Maple</h6>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px"> 
-            <img src="images/Image from iOS-6.jpg" class="portrait">
-            <h6>Media</h6>
-            <h6>Lauren Prepejchal</h6>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
-            <img src="images/Image from iOS-2.jpg" class="portrait">
-            <h6>Outreach</h6>
-            <h6>Craig Smith</h6>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3" style="margin-bottom: 10px">
-            <img src="images/Image from iOS-4.jpg" class="portrait">
-            <h6>Education</h6>
-            <h6>Don Jayaweera</h6>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h4>Spartan Hackers</h4>
+              <p>Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.</p>
+            </div>
+            <div class="col-sm-3">
+            <ul>
+                <li>
+                    <a href="#section1">About</a>
+                </li>
+                <li>
+                    <a href="#section2">Join</a>
+                </li>
+                <li >
+                    <a href="#section3">Schedule</a>
+                </li>
+                <li >
+                    <a href="#section4">FAQ</a>
+                </li>
+                <li >
+                    <a href="#section5">EBoard</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-sm-3">
+              <ul>
+                <li>
+                    <a href="https://www.facebook.com/hack.at.state/">Facebook</a>
+                </li>
+            </ul>
+            </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <div class="row text-right">
-        <a class="down-arrow" href="#sponsors">
-            <span class="glyphicon glyphicon-chevron-down" data-aos="fade-in" style="color: white"></span>
-        </a>
-    </div>
-</div>    
-    
-<div id="sponsors" class="bg-experience text-center">
-    <h3 class="text-left header-space" data-aos="fade-in">Sponsors</h3>
-    
-    <div class="row" data-aos="fade-in">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
-            <img src="images/asmsu-logo_1446832065892_26365723_ver1.0_640_480.png" style="width: 100%; padding-top: 20px;padding-bottom: 20px">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="images/Spartan-Innovations-Logo.png" style="width: 100%; padding-top: 20px;padding-bottom: 20px">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="images/sdafadgsd.jpeg" style="width: 100%; padding-top: 20px;padding-bottom: 20px">
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="text-center" data-aos="fade-in">
-        <p><b>Interested in giving tech talks, marketing your company, or helping students attend hackathons? Consider becoming a corporate sponsor of Spartan Hackers! For more information about sponsorship, contact <a href="mailto:webmaster.spartanhackers@gmail.com?Subject=My%20Company%20is%20Intresteed%20in%20Sponsoring%20Spartan%20Hackers" target="_top"><i>webmaster.spartanhackers@gmail.com</i></a></b></p>
-    </div>
-</div>    
-    
-<footer class="bg-footer text-center">
-    <h6>Michigan State University Spartan Hackers</h6>
 </footer>
     
-<script> 
-
-//smooth transitions    
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, a[href='#home'], a[href='#about'], a[href='#join'], a[href='#eboard'], a[href='#eventInfo'],a[href='#events'], a[href='#sponsors']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-    
-//transparentancy change navbar
-$(function() {
-    var header = $(".navbar");
-  
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-            header.addClass("scrolled");
-        } else {
-            header.removeClass("scrolled");
-        }
-    });
-  
-});    
-    
-// Letters = function() {
-//   this.lettersDOM = null;
-//   this.active = null;
-//   this.letters = [];
-//   this.alphabet = ["a", "b", "c", "d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","i","u","v","w","x","y","z",".","~","&","|","^","ç","@","]","[","{","}","ù","*","µ","¤","$","£","€","°",")","(","+","-","/","<",">","²","`","é","è","1","2","3","4","5","6","7","8","9","0"
-//   ];
-
-//   return this;
-// };
-
-// Letters.prototype.init = function( word ) {
-  
-//   this.lettersDOM = document.querySelectorAll('.letter');
-//   this.active = true;
-//   var i;
-//   var nextChar;
-//   var lettersMax = this.lettersDOM.length;
-  
-//   for ( i = 0; i < this.lettersDOM.length; i++ ) {
-    
-//     if ( word.charAt( i ) != "" )
-//       nextChar = word.charAt( i );
-//     else 
-//       nextChar = false;
-    
-//     this.letters.push( new Letter( this.lettersDOM[ i ],  nextChar ) );
-    
-//   }
-  
-//   if ( word.length > lettersMax ) {
-    
-//     var wordContainer = document.getElementById("word");
-
-//     for ( i = lettersMax; i < word.length; i++ ) {
-//       var letterSpan = document.createElement('span');
-//       letterSpan.innerHTML = "";
-//       letterSpan.classList.add('letter');
-//       wordContainer.appendChild( letterSpan );
-//       this.letters.push( new Letter( letterSpan,  word.charAt( i ) ) );
-//     }
-//   }
-  
-//   this.animate();
-  
-//   return this;
-  
-// };
-
-// Letters.prototype.animate = function() {
-//   var i;
-//   var random;
-//   var char;
-  
-//   if ( this.active ) {
- 
-//     window.requestAnimationFrame( this.animate.bind(this) );
-    
-//     var indexes = [];
-
-//     for ( i = 0; i < this.letters.length; i++ ) {
-    
-//       var current = this.letters[ i ];  
-      
-//       if ( !current.isDead ) {     
-//         random = Math.floor(Math.random() * (this.alphabet.length - 0));
-//         char = this.alphabet[ random ]; 
-//         current.render( char );
-//       } else {
-//         indexes.push( i );
-//       }
-//     } 
-    
-//     for ( i = 0; i < indexes.length; i++ ) {
-//       this.letters.splice( indexes[ i ], 1 );
-//     }
-    
-//     if ( this.letters.length == 0 ) {
-//       this.stop();
-//     }
-//   }
-// };
-
-// Letters.prototype.start = function( word ) {
-//   this.init( word );
-// };
-
-// Letters.prototype.stop = function() {
-//   this.active = false;
-// };
-
-// Letter = function( DOMElement, nextChar ) {
-  
-//   var scope = this;
-  
-//   this.DOMEl = DOMElement;
-//   this.char = DOMElement.innerHTML;
-//   this.next = nextChar;
-//   this.speed = Math.floor(Math.random() * (600 - 10) );
-//   this.total = 0;
-//   this.duration = 500;
-//   this.animating = true;
-//   this.isDead = false;
-  
-//   this.timer = setInterval(function() { 
-//     if ( scope.animating === true ) {
-//       scope.total += scope.speed;
-//     } 
-//     scope.animating = !scope.animating;
-//   }, this.speed);
-
-//   this.animate();
-  
-//   return this;
- 
-// };
-
-// Letter.prototype.animate = function() {
-//   var i;
-//   var random;
-  
-//   if ( !this.isDead ) {
-//     window.requestAnimationFrame( this.animate.bind(this) );
-//   }
-  
-  
-//   if ( this.total < this.duration ) {
-    
-//     if ( this.animating ) {
-//       this.DOMEl.innerHTML = this.char;
-//     }
-      
-//   } else {
-//     this.isDead = true;
-    
-//     if ( !this.next ) {
-//       var parent = document.getElementById('word');
-//       parent.removeChild( this.DOMEl );
-//       return;
-//     }
-    
-//     this.DOMEl.innerHTML = this.next;
-//   }
-// };
-
-// Letter.prototype.render = function( char ) {
-  
-//   if ( !this.animating ) {
-//     this.char = char;
-//   }
-  
-// };
-
-// var word = [ "SPARTAN.HACKERS", "A.COMP.SCI.CLUB", "IDEA.BUILD.WIN", "NOT.SPARTAHACK", "SPARTAN.HACKERS", "GET.A.JOB.TODAY","GET.FREE.SWAG!.", "EAT.SLEEP.CODE!.", "BETTER.CS.CLUB." ];
-// var nextWord = 1;
-
-// var letters = new Letters();
-
-// setTimeout( function() {
-  
-//   letters.start( word[ nextWord ] );
-  
-//   setInterval(function() {
-//     nextWord++;
-//     if ( nextWord >= word.length )
-//       nextWord = 0;
-    
-//     letters.start( word[ nextWord ] );
-//   }, 10000);
-  
-// }, 30000);
-
-
-
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
 </body>
 </html>
