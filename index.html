@@ -318,8 +318,10 @@
             <div class="col-sm-6">
                 <h4>Stay Connected!</h4>
                 <ul>
-                    <li>Follow us Facebook</li>
-                    <li>Join Our Mailing List</li>
+                    <li>
+                        <a href="https://www.facebook.com/hack.at.state/">Follow us Facebook</a>
+                     </li>
+                    <li id="scrollToMailingList">Join Our Mailing List</li>
                     <li>Talk to a Spartan Hackers Member</li>
                 </ul>
                 <p>By doing all of these things you’ll be notified of all our events. Explore the computer science community, learn useful skills, and make friends along the way.</p>
@@ -630,6 +632,12 @@
         </div>
     </div>
 </footer>
+    
+    <script>
+        document.querySelector("#scrollToMailingList").onclick = function(){
+            document.querySelector("#mc_embed_signup_scroll").scrollIntoView({behavior: "smooth"});
+        }
+    </script>
     
 </body>
 </html>
