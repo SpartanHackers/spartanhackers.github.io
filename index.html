@@ -368,7 +368,7 @@
         <th>Sign-in</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="events">
       <tr>
         <td>8/27/19</td>
         <th></th>
@@ -645,7 +645,38 @@
         document.querySelector("#scrollToMailingList").onclick = function(){
             document.querySelector("#mc_embed_signup_scroll").scrollIntoView({behavior: "smooth"});
         }
-    </script>
+
+function eventIsToday(sTarget){
+   var targetDate = new Date(sTarget);
+   var today = getDate();
+
+   var isToday = targetDate.getDate() == today.getDate();
+   return isToday;
+}
+
+function checkAllRows(){
+    var rows = document.querySelectorAll("#events tr");
+  
+    rows.forEach(function(row){
+      var eventDate = row.querySelector("td").innerText;
+
+
+      if(!eventIsToday(eventDate)){
+          var signInCell = row.querySelectorAll("td")[2];
+
+          if(signInCell){
+              row.querySelectorAll("td")[2].innerHTML = " "; 
+          }
+	   }
+	});
+}
+
+function getDate(){
+	return new Date();
+}
+
+checkAllRows();
     
+</script>
 </body>
 </html>
