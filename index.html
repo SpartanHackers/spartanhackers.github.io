@@ -32,7 +32,7 @@
             padding-bottom:100px
         }
         nav {
-            background-color: rgb(0, 0, 0, .40);
+            background-color: rgb(0, 0, 0, .9);
         }
         .navbar-brand {
             letter-spacing: 25%;
@@ -81,7 +81,7 @@
         #home {
             padding-top:100px;
             padding-bottom:100px;
-            background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, .9)),url("images/msuSkyView.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, .9),rgba(24, 69, 59, .9)),url("images/msuSkyView.jpg");
             
             background-attachment: fixed;
             background-position: center;
@@ -92,7 +92,7 @@
             background-color: black;
         }
         #section2 {
-            background-color: rgb(10, 10, 10);
+            background-color: rgb(24, 69, 59);
         }
         #section3 {
             background-color: black;
@@ -102,6 +102,10 @@
         }
         #section5 {
             background-color: rgb(10, 10, 10);
+        }
+        #section6 {
+            background-color: white;
+            color: rgb(24, 69, 59);
         }
         footer {
             background-color: black;
@@ -120,9 +124,20 @@
             width: 100px;
             margin-bottom: 40px;
         }
+        .text-divider-dark {
+            background-color: rgb(24, 69, 59);
+            height: 10px;
+            width: 100px;
+            margin-bottom: 40px;
+        }
         .divider {
             background-color: rgb(24, 69, 59);
             height: 20px;
+        }
+        .sponsor-img {
+            width: 100%;
+            object-fit: scale-down;
+            max-height: 100px;
         }
         .portrait {
             height: 100px;
@@ -179,12 +194,13 @@
 			color: #006059;
 			text-decoration:underline;
 		}
+        
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="70">
 
 <nav id="nav" class="navbar navbar-expand-md fixed-top navbar-dark">
-    <a class="navbar-brand" href="#home" >SPARTAN HACKERS</a>
+    <h3><a class="navbar-brand" href="#home" >SPARTAN HACKERS</a></h3>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -192,6 +208,9 @@
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#section1">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section6">Sponsors</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section2">Join</a>
@@ -263,9 +282,6 @@
     </div>
 </div>        
     
-<div class="divider">
-</div>
-    
 <div id="section1">
     <div class="container">
         <div class="row">
@@ -321,6 +337,30 @@
 </div>
 
 <div class="divider">
+</div>
+    
+<div id="section6">
+    <div class="container">
+        
+        <h2>Our Sponsors</h2>
+        <div class="text-divider-dark"></div>
+        
+        <div class="row text-center">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <br>
+                    <a href="https://www.spartaninnovations.org/"><img src="images/Spartan-Innovations-Logo.png" class="sponsor-img"></a>
+                    <br><br>
+                    <h6>Spartan Innovations</h6>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <br>
+                    <a href="https://www.hackerfellows.com/"><img src="images/HF-Logo-Icon.png" class="sponsor-img"></a>
+                    <br><br>
+                    <h6>Hacker Fellows</h6>
+                </div>
+        </div>        
+        
+    </div>
 </div>
     
 <div id="section2" >
