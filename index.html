@@ -21,51 +21,33 @@
 
     <style>
         html {
-          scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
         body {
-            position: relative;
+            font-family: Avenir Next;
         }
         .container {
-            padding-top:100px;
-            padding-bottom:100px
+            padding-bottom: 75px;
+            padding-top: 75px;
         }
         .navbar-brand {
-            letter-spacing: 25%;
-            font-weight: 200;
+            color: #4F4F4F;
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: bold;
         }
         .navbar-brand:hover {
-            color: #1abc9c;
+            color: #246959;
         }
         .nav-item {
             font-family: Avenir Next;
             font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 25px;
-            /* identical to box height */
-
-        }
-        .nav-link:hover {
-            color: #1abc9c;
-        }
-        .navbar-brand {
-            letter-spacing: 5px;
-            padding-left: 30px;
-        }
-        h1,h2,h3,h4,h5,h6 {
-            letter-spacing: 5px;
-            padding-bottom: 25px;
-        }
-        .display-2 {
-            letter-spacing: 10px;
         }
         .card {
-            background-color: rgb(24, 69, 59);
-            border-color: white;
+            
         }
         .card-link {
-            color: white;
+            color: black;
         }
         .card-link:hover {
             color: grey;
@@ -76,91 +58,7 @@
             background-attachment: fixed;
             background-position: center;
         }
-        ul {
-            list-style: none;
-            color: lightgray;
-        }
-        a {
-            color: white;
-            letter-spacing: 1px;
-        }
-        .text-divider {
-            background-color: white;
-            height: 10px;
-            width: 100px;
-            margin-bottom: 40px;
-        }
-        .text-divider-dark {
-            background-color: rgb(24, 69, 59);
-            height: 10px;
-            width: 100px;
-            margin-bottom: 40px;
-        }
-        .divider {
-            background-color: rgb(24, 69, 59);
-            height: 20px;
-        }
-        .sponsor-img {
-            width: 100%;
-            object-fit: scale-down;
-            max-height: 100px;
-        }
-        .portrait {
-            height: 100px;
-            width: 100px;
-            display: inline-block;
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-            object-fit: cover;
-            display: inline-block;
-            border: solid;
-            border-width: thick;
-            margin-bottom: 20px;
-        }
-        .portrait:hover {
-            height: 100px;
-            width: 100px;
-            display: inline-block;
-            -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-            object-fit: cover;
-        }
-        .img-icon {
-            height: 200px;
-            width: 200px;
-        }
-        .icon-size {
-            height: 50px;
-        }
-        input[type=email]{
-          border: 2px solid white;
-          background-color: transparent;
-          padding: 10px;
-          color: white;
-        }
-        input[type=submit] {
-          background-color: #246959;
-          border: none;
-          color: white;
-          padding: 12px 30px;
-          text-decoration: none;
-          cursor: pointer;
-          margin: 20px;
-        }
-        input[type=submit]:hover {
-          background-color: #006059;
-        }
-
-        .stay-connected {
-			color: white;
-			line-spacing: 1px;
-		}
-
-		.stay-connected:hover {
-			color: #006059;
-			text-decoration:underline;
-		}
-
+    
         .title-text {
             font-family: Avenir Next;
             font-style: normal;
@@ -197,6 +95,9 @@
             background: #246959;
             border-radius: 25px;
             min-width:15%;
+            width: 200px;
+            height: 50px;
+            border: none;
         }
 
         #get-started span {
@@ -210,56 +111,40 @@
             border-radius: 5px;
         }
 
-        .nav-link {
-            letter-spacing: 5px;
-        }
-
         .nav-link span {
             color: #4F4F4F;
+        }
+        .nav-link span:hover {
+            color: #246959;
         }
 
         #nav {
             width: 100%;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
             background: #ffffff;
         }
 
+        footer {
+            text-align: center;
+        }
+
+        .card-profile {
+            background: #E0E0E0;
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .our-mission{
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: #000000;
+        }
     </style>
 </head>
-
-
-<style>
-    body {
-        font-family: Avenir Next;
-    }
-
-    .container {
-        padding-top: 75px;
-        padding-bottom: 75px;
-    }
-
-    footer {
-        padding-top: 75px;
-        padding-bottom: 75px;
-        text-align: center;
-    }
-
-    .card-profile {
-        background: #E0E0E0;
-        border-radius: 10px;
-        width: 100px;
-        height: 100px;
-    }
-
-    .our-mission{
-        font-family: Avenir Next;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-</style>
 
 
 
@@ -267,30 +152,27 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="70">
 
-<nav id="nav" class="navbar navbar-expand-md fixed-top navbar-dark">
-    <h3><a class="navbar-brand" href="#home" >SPARTAN HACKERS</a></h3>
+<nav id="nav" class="navbar navbar-expand-md fixed-top">
+    <h3><a class="navbar-brand" href="#home" >SH</a></h3>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#section1"><span>About</span></a>
+          <a class="nav-link" href="#about"><span>About</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section6"><span>Sponsors</span></a>
+          <a class="nav-link" href="#sponsors"><span>Sponsors</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section2"><span>Join</span></a>
+          <a class="nav-link" href="#schedule"><span>Schedule</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section3"><span>Schedule</span></a>
+          <a class="nav-link" href="#faqs"><span>Faq</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section4"><span>FAQ</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section5"><span>Board</span></a>
+          <a class="nav-link" href="#team"><span>Team</span></a>
         </li>
     </ul>
   </div>
@@ -298,14 +180,14 @@
 
 <div id="home">
     <div class="container text-center">
-        <h2 style="font-size: 450%" class="title-text">SPARTAN HACKERS</h2>
+        <h2 class="title-text">SPARTAN HACKERS</h2>
         <h3 class="subtitle-text">MIGHIGAN STATE UNIVERSITY</h3>
         <h6 class="cse-club">Computer Science & Engineering Club</h6>
         <button id="get-started"><span>GET STARTED</span></button>
     </div>
 </div>
 
-<div id="section1">
+<div id="about">
     <div class="container">
         <div class="row">
             <div>
@@ -316,34 +198,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="container">
-                    <h2>What We Do?</h2>
-                    <div class="text-divider"></div>
-                    <h4>Hackathons</h4>
-                    <p>The majority of what we do is go to Hackathons! Hackathons are 24-48 hour coding competitions and the fastest way to build real projects. While you're hacking, you can get to know representatives from companies like Google, Facebook, Microsoft, and more! Plus, every hackathon is filled to the brim with free food.</p>
-                    <a href="https://devpost.com/"><u>Visit Devpost.com to see past Hackathons and projects!</u></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="container">
-                    <h4>Workshops</h4>
-                    <p>Spartan Hackers hosts events where students hang out, work on projects, share ideas, and learn about cool new technologies. We strive to create an environment where it's easy to meet some of the students at the forefront of innovation at MSU.</p>
-                    <p>Previous Workshop Topics: Github Source Control, Microsoft Azure, Prep for the Technical Interview Algorithms, Hackerrank, Unity, HTML/CSS, iOS, and Android.</p>
-                    <h4>Company Speakers</h4>
-                    <p>Spartan Hackers invites companies in the industry to come and share their experiences with us. These are also a great way to network with those companies and possibly land a full-time or internship position with them.</p>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
-<div id="" >
+<div id="schedule" >
     <div class="container">
     <h5>Schedule</h5>
     <p>Hackathons, Workshops, Tech-Talks we plan to attend/host 2020-2021. Event dates may change or cancel</p>
@@ -359,10 +217,22 @@
             </thead>
             <tbody>
               <tr>
-                <td>2/25/20</td>
-                  <td>Workshop</td>
-                  <td>Figma Workshop</td>
-                <td><a><u>Sign-in</u></a></td>
+                <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                <td><a>-</a></td>
+              </tr>
+                <tr>
+                <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                <td><a>-</a></td>
+              </tr>
+                <tr>
+                <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                <td><a>-</a></td>
               </tr>
             </tbody>
         </table>
@@ -370,24 +240,11 @@
     </div>
 </div>
 
-<div id="" >
-
+<div id="sponsors" >
     <div class="container">
         <h5>Sponsors</h5>
         <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <img src="images/HackerFellows_lockup-Primary.png" style="width: 100%">
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <img src="images/HackerFellows_lockup-Primary.png" style="width: 100%">
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <img src="images/HackerFellows_lockup-Primary.png" style="width: 100%">
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <img src="images/HackerFellows_lockup-Primary.png" style="width: 100%">
-            </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-3">
                 <img src="images/HackerFellows_lockup-Primary.png" style="width: 100%">
             </div>
         </div>
@@ -403,50 +260,94 @@
     </div>
 </div>
 
-<div id="" >
+<div id="faqs" >
     <div class="container">
     <h5>Frequently asked questions</h5>
-    <div id="accordion">
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            What is hacking?
-        </a>
-      </div>
-      <div id="collapseOne" class="collapse show" data-parent="#accordion">
-        <div class="card-body">
-          You're probably thinking of movies where hackers steal secrets from the FBI. That's not what we're about. To us, hacking means using cutting edge technology to create kick-ass projects. Go see Devpost.com. It will give you a better understanding of what kind of projects we're talking about.
+    <div class="row">
+        <div class="col-md-6">
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        What is hacking?
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      You're probably thinking of movies where hackers steal secrets from the FBI. That's not what we're about. To us, hacking means using cutting edge technology to create kick-ass projects. Go see Devpost.com. It will give you a better understanding of what kind of projects we're talking about.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        I missed the first meeting, can I still join?
+                  </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      Absolutely! You can find all of our events in the Spartan Hackers facebook page. No prior knowledge or experience is needed, so come say hi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        What if I can't code?
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      No problem! As long as you're passionate about how technology can shape the future, you'll fit right in. We offer lots of events to help teach coding skills!
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-            I missed the first meeting, can I still join?
-      </a>
-      </div>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          Absolutely! You can find all of our events in the Spartan Hackers facebook page. No prior knowledge or experience is needed, so come say hi!
+        <div class="col-md-6">
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                        What is hacking?
+                    </a>
+                  </div>
+                  <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      You're probably thinking of movies where hackers steal secrets from the FBI. That's not what we're about. To us, hacking means using cutting edge technology to create kick-ass projects. Go see Devpost.com. It will give you a better understanding of what kind of projects we're talking about.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                        I missed the first meeting, can I still join?
+                  </a>
+                  </div>
+                  <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      Absolutely! You can find all of our events in the Spartan Hackers facebook page. No prior knowledge or experience is needed, so come say hi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                        What if I can't code?
+                    </a>
+                  </div>
+                  <div id="collapseSix" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      No problem! As long as you're passionate about how technology can shape the future, you'll fit right in. We offer lots of events to help teach coding skills!
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-            What if I can't code?
-        </a>
-      </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          No problem! As long as you're passionate about how technology can shape the future, you'll fit right in. We offer lots of events to help teach coding skills!
-        </div>
-      </div>
-    </div>
     </div>
     </div>
 </div>
-<div id="" >
+<div id="team" >
     <div class="container">
         <h5>Our Executive Board</h5>
         <h6>2020-2021</h6>
@@ -486,7 +387,7 @@
 </div>
 
 <footer>
-    <div class="container">
+    <div class="">
         <p>Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.</p>
         <p>Made by the Spartan Hackers Team @ MSU</p>
     </div>
