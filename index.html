@@ -9,386 +9,401 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Spartan Hackers" />
     <meta property="og:description"   content="Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University." />
-    <meta property="og:image"         content="images/shoutline.png" />
+    <meta property="og:image"         content="images/SH LOGO.png" />
 
-    <link rel="icon" href="images/shoutline.png">
+    <link rel="icon" href="images/SH LOGO.png" >
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap 4 Styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: Avenir Next;
-        }
-        .container {
-            padding-bottom: 75px;
-            padding-top: 75px;
-        }
-        .navbar-brand {
-            color: #4F4F4F;
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: bold;
-        }
-        .navbar-brand:hover {
-            color: #246959;
-        }
-        .nav-item {
-            font-family: Avenir Next;
-            font-style: normal;
-        }
-        .card {
-            
-        }
-        .card-link {
-            color: black;
-        }
-        .card-link:hover {
-            color: grey;
-        }
-        #home {
-            padding-top:100px;
-            padding-bottom:100px;
-            background-attachment: fixed;
-            background-position: center;
-        }
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     
-        .title-text {
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 64px;
-            line-height: 87px;
-            letter-spacing: 0.25em;
-
-            color: #246959;
-        }
-
-        .subtitle-text {
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 36px;
-            line-height: 49px;
-
-            color: #4F4F4F;
-        }
-
-        .cse-club {
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 33px;
-            /* identical to box height */
-
-            color: #828282;
-        }
-
-        #get-started {
-            background: #246959;
-            border-radius: 25px;
-            min-width:15%;
-            width: 200px;
-            height: 50px;
-            border: none;
-        }
-
-        #get-started span {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 19px;
-
-            color: #F2F2F2;
-
-            border-radius: 5px;
-        }
-
-        .nav-link span {
-            color: #4F4F4F;
-        }
-        .nav-link span:hover {
-            color: #246959;
-        }
-
-        #nav {
-            width: 100%;
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-            background: #ffffff;
-        }
-
-        footer {
-            text-align: center;
-        }
-
-        .card-profile {
-            background: #E0E0E0;
-            border-radius: 10px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .our-mission{
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 25px;
-            color: #000000;
-        }
-        .footer {
-          font-size: 11px;
-        }
-    </style>
 </head>
 
+<style>
+
+    body {
+        font-family: Avenir Next;
+        background-color: black;
+        color: white;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    .container {
+        margin-top: 300px;
+        margin-bottom: 300px;
+    }
+
+    /* Navbar */
+    nav {
+        background-color: black;
+    }
+
+    nav .fas,.fab {
+        padding: 15px 15px 15px 15px;
+        border-bottom-style: solid;
+        border-width: thin;
+        color: grey;
+        height: 55px;
+    }
+
+    nav .fas:hover,.fab:hover {
+        color: white;
+        border-width: medium;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        text-align: center;
+        background-color: black;
+        color: lightgray;
+        margin: 0;
+    }
+    .jumbotron h1 {
+        font-weight: bold;
+        font-size: 54pt;
+        background: -webkit-linear-gradient(left, lightgray , white);
+        background: -o-linear-gradient(right, lightgray, white);
+        background: -moz-linear-gradient(right, lightgray, white);
+        background: linear-gradient(to right, lightgray , white); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .jumbotron h2 {
+        font-weight: 600;
+        font-size: 18pt;
+    }
+
+    .jumbotron h3 {
+        font-weight: normal;
+        font-size: 14pt;
+    }
 
 
+    /* About */
+    #about h2,h6 {
+        font-weight: bolder;
+    }
 
+    #about h6 {
+        padding-bottom: 25px;
+    }
 
-<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    .circle-border {
+        /* border-radius: 100%; */
+        border: 3px solid #E1F235;
+        height:100%;
+        margin: auto;
+        padding: 30px;
+        border-radius: 30px 0px 30px 0px;
 
-<nav id="nav" class="navbar navbar-expand-md fixed-top">
-    <h3><a class="navbar-brand" href="#home" >SH</a></h3>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about"><span>About</span></a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#sponsors"><span>Sponsors</span></a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="#schedule"><span>Schedule</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faqs"><span>Faq</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team"><span>Team</span></a>
-        </li>
-    </ul>
-  </div>
-</nav>
+    }
 
-<div id="home">
-    <div class="container text-center">
-        <h2 class="title-text">SPARTAN HACKERS</h2>
-        <h3 class="subtitle-text">MIGHIGAN STATE UNIVERSITY</h3>
-        <h6 class="cse-club">Computer Science & Engineering Club</h6>
-        <!-- <br> -->
-        <!-- <button id="get-started"><span>GET STARTED</span></button> -->
-    </div>
-</div>
+    /* Eboard */
+    #eboard h2,h6 {
+        font-weight: bolder;
+    }
 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div>
-                <div class="container">
-                    <h4 class="our-mission">Our Mission</h4>
-                    <p>Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.</p>
-                    <p>To rephrase, we build cool tech projects by working with others.</p>
-                </div>
-            </div>
+    #eboard h6 {
+        padding-bottom: 25px;
+    }
+
+    .card {
+        filter: grayscale(100%);
+        margin-bottom: 25px;
+    }
+
+    .card a {
+        color: white;
+    }
+    .card a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Faqs */
+    #faqs h2,h6 {
+        font-weight: bolder;
+    }
+
+    #faqs h6 {
+        padding-bottom: 25px;
+    }
+
+    .card-body {
+        background-color: black;
+    }
+
+    .card-header {
+        background-color: black;
+    }
+
+    .card-link {
+        color: white;
+    }
+
+    .card-link:hover {
+        color: grey;
+    }
+
+    /* footer */
+
+    footer {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+</style>
+
+<body>
+    <nav class="navbar navbar-expand fixed-bottom">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"><i class="fas  fa-globe"></i></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#b"><i class="fas fa-calendar"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#c"><i class="fas fa-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/hack.at.state/"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/RfwuWfd"><i class="fab fa-discord"></i></a>
+          </li> -->
+        </ul>
+      </nav>
+
+    <div id="home">
+        <div class="jumbotron jumbotron-fluid">
+            <p><img src="images/SH LOGO.png" alt="SH Logo" style="height: 144pt; margin: 50px;"></p>
+            <h1>SPARTAN HACKERS</h1>  
+            <h2>MIGHIGAN STATE UNIVERSITY</h2>    
+            <h3>Computer Science & Engineering Club</h3>
+            <i class="fas fa-angle-down"></i>
         </div>
     </div>
-</div>
-
-<div id="schedule" >
-    <div class="container">
-    <h5>Schedule</h5>
-    <p>Hackathons, Workshops, Tech-Talks we plan to attend/host 2020-2021. Event dates may change or cancel</p>
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Type</th>
-                <th>Event</th>
-                <th>Sign-in</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                <td><a>-</a></td>
-              </tr>
-                <tr>
-                <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                <td><a>-</a></td>
-              </tr>
-                <tr>
-                <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                <td><a>-</a></td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
-    </div>
-</div>
-
-<!-- <div id="sponsors" >
-    <div class="container">
-        <h5>Sponsors</h5>
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <img src="images/HackerFellows_lockup-Primary.png" style="width: 100%">
-            </div>
-        </div>
-    </div>
-</div>
-<div id="" >
-    <div class="container">
-        <h5>Help us develop a community</h5>
-        <p>With your support, Spartan Hackers brings hundreds of ambitious hackers together to work on projects that develop skill that your company needs in the future. We want to make your company an essential part of the Spartan Hackers experience.</p>
-        <p>Sponsors have access to a driven community of highly motivated university students with fresh ideas that could be a beneficial part of your workplace. We're happy to facilitate varying degrees of involvement based on your company's goals.</p>
-        <p>If you're looking to find qualified job and internship candidate, we hope you'll take the opportunity to reach out with our community.</p>
-        <p>Interested in sponsoring? Email us at sponsor@email.com</p>
-    </div>
-</div> -->
-
-<div id="faqs" >
-    <div class="container">
-    <h5>Frequently asked questions</h5>
-            <div id="accordion">
-                <div class="card">
-                  <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                        What is hacking?
-                    </a>
-                  </div>
-                  <div id="collapseOne" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                      You're probably thinking of movies where hackers steal secrets from the FBI. That's not what we're about. To us, hacking means using cutting edge technology to create kick-ass projects. Go see Devpost.com. It will give you a better understanding of what kind of projects we're talking about.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                        I missed the first meeting, can I still join?
-                  </a>
-                  </div>
-                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                      Absolutely! You can find all of our events in the Spartan Hackers facebook page. No prior knowledge or experience is needed, so come say hi!
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                        What if I can't code?
-                    </a>
-                  </div>
-                  <div id="collapseThree" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                      No problem! As long as you're passionate about how technology can shape the future, you'll fit right in. We offer lots of events to help teach coding skills!
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<div id="team" >
-    <div class="container">
-        <h5>Our Executive Board</h5>
-        <h6>2020-2021</h6>
-
+    
+    <div id="about">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-md-3">
-                    <p>Advisor</p>
-                    <p>Josh Nahum</p>
+                <div class="col-sm-2">
                 </div>
-                <div class="col-sm-3 col-md-3">
-                    <p>President</p>
-                    <p>William Huynh</p>
+                <div class="col-sm-8">
+                    <h2>About Us & <span style="color: #E1F235">What We Do? - 01</span></h2>
+                    <h6><code>// Short Answer: Code Stuff to Get Stuff</code></h6>
+                    <br>
+                    <h5>Hackathons</h5>
+                    <p>The majority of what we do is go to Hackathons! Hackathons are 24-48 hour coding competitions and the fastest way to build real projects. While you're hacking, you can get to know representatives from companies like Google, Facebook, Microsoft, and more! Plus, every hackathon is filled to the brim with free food. <a href="https://devpost.com/">Visit Devpost.com to see past Hackathons and projects!</a></p>
+                    <br>
+                    <h5>Workshops</h5>
+                    <p>Spartan Hackers hosts events where students hang out, work on projects, share ideas, and learn about cool new technologies. We strive to create an environment where it's easy to meet some of the students at the forefront of innovation at MSU.</p>
+                    <p>Previous Workshop Topics: Github Source Control, Microsoft Azure, Prep for the Technical Interview Algorithms, Hackerrank, Unity, HTML/CSS, iOS, and Android.</p>
+                    <br>
+                    <h5>Company Speakers</h5>
+                    <p>Spartan Hackers invites companies in the industry to come and share their experiences with us. These are also a great way to network with those companies and possibly land a full-time or internship position with them.</p>
                 </div>
-                <div class="col-sm-3 col-md-3">
-                    <p>Sponsorship Chair</p>
-                    <p>Don Jayaweera</p>
-                </div>
-                <div class="col-sm-3 col-md-3">
-                    <p>Webmaster</p>
-                    <p>Jordan Bakke</p>
-                </div>
-        		<div class="col-sm-3 col-md-3">
-                    <p>Graphic Designer</p>
-                    <p>Han Nguyen</p>
-                </div>
-                <div class="col-sm-3 col-md-3">
-                    <p>Outreach Chair</p>
-                    <p>Micheal Umanskiy</p>
-                </div>
-                <div class="col-sm-3 col-md-3">
-                    <p>Hackathon Chair</p>
-                    <p>Ethan Yang</p>
+                <div class="col-sm-2">
                 </div>
             </div>
+        </div>
 
+        <div class="container">
+            <h2>Getting <span style="color: #E1F235">Started - 02</span></h2>
+            <h6><code>// Below are the first steps you should take to get more involved!</code></h6>
+            <br>
+            <div class="row" style="text-align: center;">
+                <div class="col-sm-4">
+                    <div class="circle-border">
+                        <h1>[ 1 ]</h1>
+                        <h4>Join Us On Facebook & Discord</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="circle-border">
+                        <h1>[ 2 ]</h1>
+                        <h4>Attend Welcome Meeting In The Fall</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="circle-border">
+                        <h1>[ 3 ]</h1>
+                        <h4>Apply To & Attend Hackathons</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-sm-6">
+                <h2>Previous <span style="color: #E1F235">Hackathons - 03</span></h2>
+                <h6><code>// This is a list of Hackathons we've attended as a group in the past</code></h6>
+                <ul>
+                    <li><h2>MSU <a href="https://spartahack.com/">SpartaHack</a></h2></li>
+                    <li><h2>UofM <a href="https://mhacks.org/">MHacks</a></h2></li>
+                    <li><h2>Purdue <a href="https://boilermake.org/">BoilerMake</a></h2></li>
+                    <li><h2>Oakland <a href="http://grizzhacks.com/">GrizzHacks</a></h2></li>
+                    <li><h2>UofI <a href="https://www.hackillinois.org/">HackIllinois</a></h2></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+            </div>
+        </div>
     </div>
-</div>
 
-<footer>
-    <div class="footer">
+    <div id="eboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <!-- <p><img class="img-fluid" src="images/MHacksGroup.jpg" alt="MHacksGroup" style="box-shadow: 10px 10px #246959;"></p> -->
+                </div>
+                <div class="col-sm-7">
+                    <h2>Our <span style="color: #E1F235">EBoard - 04</span></h2>
+                    <h6><code>// These are the students that organize Spartan Hackers club meetings & logistics. A new executive board is made every school year so be ready to apply when applications come out!</code></h6>
+                    <div class="row">
+                        <div class="col-6 col-sm-4">
+                            <div class="card">
+                                <!-- <a href=""> -->
+                                <!-- <img class="card-img-top" src="images/MHacksGroup.jpg" alt="Card image" style="width:100%"> -->
+                                <div class="card-body">
+                                    <p>President</p>
+                                    <h5 class="card-title">Will</h5>
+                                </div>
+                                <!-- </a> -->
+                              </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="card">
+                                <!-- <a href=""> -->
+                                <!-- <img class="card-img-top" src="images/MHacksGroup.jpg" alt="Card image" style="width:100%"> -->
+                                <div class="card-body">
+                                    <p>Sponsorship</p>
+                                    <h5 class="card-title">Don</h5>
+                                </div>
+                                <!-- </a> -->
+                              </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="card">
+                                <!-- <a href=""> -->
+                                <!-- <img class="card-img-top" src="images/MHacksGroup.jpg" alt="Card image" style="width:100%"> -->
+                                <div class="card-body">
+                                    <p>Webmaster</p>
+                                    <h5 class="card-title">Jordan</h5>
+                                </div>
+                                <!-- </a> -->
+                              </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="card">
+                                <!-- <a href=""> -->
+                                <!-- <img class="card-img-top" src="images/MHacksGroup.jpg" alt="Card image" style="width:100%"> -->
+                                <div class="card-body">
+                                    <p>Graphic Design</p>
+                                    <h5 class="card-title">Han</h5>
+                                </div>
+                                <!-- </a> -->
+                              </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="card">
+                                <!-- <a href=""> -->
+                                <!-- <img class="card-img-top" src="images/MHacksGroup.jpg" alt="Card image" style="width:100%"> -->
+                                <div class="card-body">
+                                    <p>Outreach</p>
+                                    <h5 class="card-title">Micheal</h5>
+                                </div>
+                                <!-- </a> -->
+                              </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="card">
+                                <!-- <a href=""> -->
+                                <!-- <img class="card-img-top" src="images/MHacksGroup.jpg" alt="Card image" style="width:100%"> -->
+                                <div class="card-body">
+                                    <p>Hackathon</p>
+                                    <h5 class="card-title">Ethan</h5>
+                                </div>
+                                <!-- </a> -->
+                              </div>
+                            </div>
+                    </div>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="faqs">
+        <div class="container">
+            <h2>Frequently Asked <span style="color: #E1F235">Questions - 05</span></h2>
+            <h6><code>// You want to know more? That's great!</code></h6>
+            <div class="row">
+                <div class="col-sm-9">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    What is hacking?
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Your probably thinking cyber security, sorry to confuse you but we don't do that here. A computer hacker is any skilled computer expert who uses their technical knowledge to overcome a problem. In this case we build cool tech projects for fun and develop more skills. Go see Devpost.com. It will give you a better understanding of what kind of projects we're talking about.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    What if I can't code?
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    No problem! As long as you're passionate about how technology can shape the future, you'll fit right in. We offer lots of events to help teach coding skills!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    What if I missed the first meeting, can I still join?
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Absolutely! You can find all of our events in the Spartan Hackers facebook page, Discord, an Newsletter. No prior knowledge or experience is needed, so come say hi!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <h5>Didn't find your question?</h5>
+                    <p>Email Us at: webmaster.spartanhackers@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
         <p>Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.</p>
         <p>Made by the Spartan Hackers Team @ MSU</p>
-    </div>
-</footer>
-
-    <script>
-        document.querySelector("#scrollToMailingList").onclick = function(){
-            document.querySelector("#mc_embed_signup_scroll").scrollIntoView({behavior: "smooth"});
-        }
-
-function eventIsToday(sTarget){
-   var targetDate = new Date(sTarget);
-   var today = getDate();
-
-   var isToday = targetDate.getDate() == today.getDate();
-   return isToday;
-}
-
-function checkAllRows(){
-    var rows = document.querySelectorAll("#events tr");
-
-    rows.forEach(function(row){
-      var eventDate = row.querySelector("td").innerText;
+    </footer>
 
 
-      if(!eventIsToday(eventDate)){
-          var signInCell = row.querySelectorAll("td")[3];
-
-          if(signInCell){
-              row.querySelectorAll("td")[3].innerHTML = " ";
-          }
-	   }
-	});
-}
-
-function getDate(){
-	return new Date();
-}
-
-checkAllRows();
-
-</script>
 </body>
 </html>
