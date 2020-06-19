@@ -1,267 +1,151 @@
-    
-@media screen and (max-width: 990px) {
-    h1{
-        font-size: 24px;
-        padding-top: 30px;
-    }
-    .change-text{
-        font-size: 0px;
-    } 
-    h3, h2, h4 {
-        font-size: 14px;
-    } 
-    .header-space{
-        padding-top: 20%;
-    }
-    .bg-experience p {
-        text-align: left;
-    }
-    .smaller{
-        font-size: 12px;
-    }
-}  
-    
-body, html {
-    height: 100%;
-    margin: 0%;
-}
-h1,h2,h3,h4,h5,h6 {
-    font-weight: 300;
-    letter-spacing: 5px;
-}
-p {
-    font-weight: lighter;
-    letter-spacing: 1px;
-}
+<style>
 
+    body {
+        font-family: Avenir Next;
+        background-color: black;
+        color: white;
+    }
 
-.letter {
-    font-weight: bold;
-    font-size: 40%;
-    letter-spacing: normal;
-}
+    p {
+        font-size: 12pt;
+    }
 
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-    .letter {
+    .container {
+        margin-top: 300px;
+        margin-bottom: 300px;
+    }
+
+    /* Navbar */
+    nav {
+        background-color: black;
+    }
+
+    nav .fas,.fab {
+        padding: 15px 15px 15px 15px;
+        border-bottom-style: solid;
+        border-width: thin;
+        color: grey;
+        height: 55px;
+    }
+
+    nav .fas:hover,.fab:hover {
+        color: white;
+        border-width: medium;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        text-align: center;
+        background-color: black;
+        color: lightgray;
+        margin: 0;
+    }
+    .jumbotron h1 {
         font-weight: bold;
-        font-size: 250%;
+        font-size: 54pt;
+        background: -webkit-linear-gradient(left, lightgray , white);
+        background: -o-linear-gradient(right, lightgray, white);
+        background: -moz-linear-gradient(right, lightgray, white);
+        background: linear-gradient(to right, lightgray , white); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-}
+
+    .jumbotron h2 {
+        font-weight: 600;
+        font-size: 18pt;
+    }
+
+    .jumbotron h3 {
+        font-weight: normal;
+        font-size: 14pt;
+    }
 
 
-.home-parallax {
-    /* The image used */
-    background-image: linear-gradient(rgba(61, 0, 102,.8),rgba(24,69,59,.8)),url("images/BK1.jpg");
+    /* Schedule */
+    #schedule h2,h6 {
+        font-weight: bolder;
+    }
 
-    /* Full height */
-/*    height: 100%; */
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    #schedule h6 {
+        padding-bottom: 25px;
+    }
+
+    #schedule .container {
+        margin-top: 50px;
+    }
+
+    /* About */
+    #about h2,h6 {
+        font-weight: bolder;
+    }
+
+    #about h6 {
+        padding-bottom: 25px;
+    }
+
+    .circle-border {
+        /* border-radius: 100%; */
+        border: 3px solid #E1F235;
+        height:100%;
+        margin: auto;
+        padding: 30px;
+        border-radius: 30px 0px 30px 0px;
+
+    }
+
+    /* Eboard */
+    #eboard h2,h6 {
+        font-weight: bolder;
+    }
+
+    #eboard h6 {
+        padding-bottom: 25px;
+    }
+
+    .card {
+        filter: grayscale(100%);
+        margin-bottom: 25px;
+    }
+
+    .card a {
+        color: white;
+    }
+    .card a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Faqs */
+    #faqs h2,h6 {
+        font-weight: bolder;
+    }
+
+    #faqs h6 {
+        padding-bottom: 25px;
+    }
+
+    .card-body {
+        background-color: black;
+    }
+
+    .card-header {
+        background-color: black;
+    }
+
+    .card-link {
+        color: white;
+    }
+
+    .card-link:hover {
+        color: grey;
+    }
+
+    /* footer */
+
+    footer {
+        text-align: center;
+        margin-bottom: 100px;
+    }
     
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-.home2-parallax {
-    /* The image used */
-    background-image: linear-gradient(rgba(61, 0, 102,.8),rgba(24,69,59,.8)),url("images/BK1.jpg");
-
-    /* Full height */
-/*    height: 100%; */
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-.bg-about { 
-    background-color: #ffffff; /* White */
-    border-bottom: solid;
-    border-bottom-width: thin;
-
-    color: black;
-
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 10%;
-    padding-right: 10%;
-}  
-.bg-linebreak {
-    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK1.jpg");
-    color: #ffffff;
-     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.bg-skills { 
-    /* The image used */
-    background-image: linear-gradient(rgba(61, 0, 102,.8),rgba(24,69,59,.8)),url("images/BK1.jpg");
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    color: #ffffff;
-    
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 10%;
-    padding-right: 10%;
-
-} 
-
-.bg-eboard { 
-    /* The image used */
-    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK1.jpg");
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    color: #ffffff;
-    
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 10%;
-    padding-right: 10%;
-} 
-
-.bg-experience { 
-    
-    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.0));
-
-    color: #1e1e1e;
-    
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 10%;
-    padding-right: 10%;
-} 
-.bg-resume { 
-    /* The image used */
-    background-image: linear-gradient(rgba(24,69,59,.8),rgba(24,69,59,.8)),url("images/BK2.jpg");
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    color: #ffffff;
-    
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 10%;
-    padding-right: 10%;
-} 
-.bg-resume h4:hover {
-    background-color: black;
-    opacity: .7;
-    color: white;
-
-}
-
-.bg-contacts { 
-    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.0));
-    border-bottom: solid;
-    border-bottom-width: thin;
-    
-    color: #555555;
-    
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.bg-footer { 
-    background-color: black; /* Black Gray */
-    color: #fff;
-    padding-top: .5%;
-    padding-bottom: .5%;
-    padding-left: 10%;
-    padding-right: 10%;
-}    
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-    background-color: transparent;
-    transition: 0.3s;
-    font-weight: 200;
-}
-.navbar-nav  li a {
-    color:  white !important;
-}      
-.navbar-nav  li a:hover {
-    color:  #1abc9c !important;
-}  
-.navbar-header a {
-    color:  white !important;
-}  
-.navbar-header a:hover {
-    color:  #1abc9c !important;
-}     
-.scrolled{
-    background-color: black;
-    transition: 0.2s;
-}
-  
-.skill-cell{
-    border-left: solid;
-    border-right: solid;
-    border-width: thin;
-}
-.glyphicon{
-    padding-top: 50px;
-}
-.header-space{
-    padding-bottom: 4%;
-}
-
-.definitions *{
-    font-weight: 250;
-}
-
-.portrait {
-    height: 120px;
-    width: 120px;
-    /* border-radius: 50%; */
-    display: inline-block;
-    border: solid;
-    border-width: thick;   
-}
-
-.linkedin{
-    color:white;
-    letter-spacing:2px;
-    font-weight:200;
-}
-.linkedin:hover{
-    color:green;
-}
+</style>
