@@ -18,6 +18,19 @@
         background-color: black;
     }
 
+    .topbar {
+        font-size: 12pt;
+        font-weight: 500;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: grey;
+    }
+
     nav .fas,.fab {
         padding: 15px 15px 15px 15px;
         border-bottom-style: solid;
