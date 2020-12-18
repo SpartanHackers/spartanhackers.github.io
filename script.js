@@ -12,11 +12,13 @@ window.onload = function(event){
     const table = document.querySelector(".table");
     const customSwitch = document.getElementById("customSwitch");
     
-    customSwitch.checked = false;
+    customSwitch.checked = theme === themes.DARK;
     customSwitch.addEventListener("change", toggleTheme);
 
     if(theme === themes.DARK){
         setDarkTheme();
+    } else {
+        setLightTheme();
     }
     
     function toggleTheme(event){
