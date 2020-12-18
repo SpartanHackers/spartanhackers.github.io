@@ -3,11 +3,10 @@ const themes = {
     DARK: "dark"
 }
 
-let theme = localStorage.getItem("theme");
-init(theme);
 
 window.onload = function(event){
-
+    
+    const theme = localStorage.getItem("theme");
     const navbar = document.querySelector(".navbar");
     const table = document.querySelector(".table");
     const customSwitch = document.getElementById("customSwitch");
@@ -57,13 +56,5 @@ window.onload = function(event){
             table.classList.remove("table-dark");
             table.classList.add("table-light");
         }
-    }
-}
-
-function init(theme){
-    if(theme === themes.DARK){
-        document.querySelector('link[href="/style-light.css"]')
-        .setAttribute("href", "/style-dark.css");
-        localStorage.setItem("theme", themes.DARK);
     }
 }
