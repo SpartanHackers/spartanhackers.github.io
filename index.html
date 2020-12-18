@@ -10,25 +10,23 @@
     <meta property="og:title"         content="Spartan Hackers" />
     <meta property="og:description"   content="Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University. Computer Science Club at Michigan State University. CSE Club at MSU. MSU Hackathon Club" />
     <meta property="og:image"         content="images/SH LOGO.png" />
-
+    
     <link rel="icon" href="images/SH LOGO.png" >
-
+    
     <!-- Bootstrap 4 Styling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    
-    <!-- My Styles -->
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" type="text/css" href="/style-light.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -89,7 +87,7 @@
     
     <div id="about">
         <div class="container">
-            <h2>About Us & <span style="color: #E1F235">What We Do? - 01</span></h2>
+            <h2>About Us & <span class="header-2-span">What We Do? - 01</span></h2>
             <h6><code>// Short Answer: Basically an MSU CSE Club, We Code Projects to Get Money/Prizes/Internships</code></h6>
             <br>
             <br>
@@ -110,7 +108,7 @@
         </div>
 
         <div id="start" class="container">
-            <h2>Getting <span style="color: #E1F235">Started - 02</span></h2>
+            <h2>Getting <span class="header-2-span">Started - 02</span></h2>
             <h6><code>// Below are the first steps you should take to get more involved!</code></h6>
             <br>
             <div class="row" style="text-align: center;">
@@ -137,7 +135,7 @@
 
         <div id="hackathons" class="container">
             <div class="col-sm-6">
-                <h2>Previous <span style="color: #E1F235">Hackathons - 03</span></h2>
+                <h2>Previous <span class="header-2-span">Hackathons - 03</span></h2>
                 <h6><code>// This is a list of Hackathons we've attended as a group in the past</code></h6>
                 <ul>
                     <li><h2>MSU <a href="https://spartahack.com/">SpartaHack</a></h2></li>
@@ -159,7 +157,7 @@
                     <!-- <p><img class="img-fluid" src="images/MHacksGroup.jpg" alt="MHacksGroup" style="box-shadow: 10px 10px #246959;"></p> -->
                 </div>
                 <div class="col-sm-7">
-                    <h2>Our <span style="color: #E1F235">EBoard - 04</span></h2>
+                    <h2>Our <span class="header-2-span">EBoard - 04</span></h2>
                     <h6><code>// These are the students that organize Spartan Hackers club meetings & logistics. A new executive board is made every school year so be ready to apply when applications come out!</code></h6>
                     <div class="row">
                         <div class="col-6 col-sm-4">
@@ -238,7 +236,7 @@
 
     <div id="faqs">
         <div class="container">
-            <h2>Frequently Asked <span style="color: #E1F235">Questions - 05</span></h2>
+            <h2>Frequently Asked <span class="header-2-span">Questions - 05</span></h2>
             <h6><code>// You want to know more? That's great!</code></h6>
             <div class="row">
                 <div class="col-sm-9">
@@ -295,6 +293,15 @@
         <p>Made by the Spartan Hackers Team @ MSU</p>
     </footer>
 
+    <div class="custom-control custom-switch">
+        <input type="checkbox" checked="false" class="custom-control-input" id="customSwitch">
+        <label class="custom-control-label" for="customSwitch">
+            <span class="icon">
+                <i class="fas fa-moon"></i>
+            </span>
+        </label>
+    </div>
 
+    <script src="./script.js"></script>
 </body>
 </html>
