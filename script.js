@@ -15,15 +15,18 @@ window.onload = function(event){
     customSwitch.addEventListener("change", toggleTheme);
 
     if(theme === themes.DARK){
-        setDarkTheme();
+        setTheme(true);
     } else {
-        setLightTheme();
+        setTheme(false);
     }
     
     function toggleTheme(event){
         customSwitch.checked = event.target.checked;
-        
-        if(customSwitch.checked){
+        setTheme(customSwitch.checked);
+    }
+
+    function setTheme(switchChecked){
+        if(switchChecked){
             setDarkTheme();
         } else {
             setLightTheme();
