@@ -34,10 +34,8 @@ window.onload = function(event){
     }
 
     function setDarkTheme(){
-        const element = document.querySelector('link[href="/style-light.css"]')
-        if (element){
-            element..setAttribute("href", "/style-dark.css");
-        }
+        document.querySelector('link[href="/style-light.css"]')
+        .setAttribute("href", "/style-dark.css");
         localStorage.setItem("theme", themes.DARK);
         
         navbar.classList.add("navbar-dark");
@@ -51,9 +49,7 @@ window.onload = function(event){
 
     function setLightTheme(){
         const element = document.querySelector('link[href="/style-dark.css"]')
-        if (element){
-            element.setAttribute("href", "/style-light.css");
-        }
+        .setAttribute("href", "/style-light.css");
         localStorage.setItem("theme", themes.LIGHT);
 
         navbar.classList.remove("navbar-dark");
