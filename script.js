@@ -48,7 +48,7 @@ window.onload = function(event){
     }
 
     function setLightTheme(){
-        const element = document.querySelector('link[href="/style-dark.css"]')
+        document.querySelector('link[href="/style-dark.css"]')
         .setAttribute("href", "/style-light.css");
         localStorage.setItem("theme", themes.LIGHT);
 
