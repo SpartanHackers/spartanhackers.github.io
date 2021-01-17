@@ -10,6 +10,8 @@ window.onload = function(event){
     const navbar = document.querySelector(".navbar");
     const table = document.querySelector(".table");
     const customSwitch = document.getElementById("customSwitch");
+    const collapse = document.querySelector('.navbar-collapse');
+    collapse.addEventListener('click', clickListener);
     
     customSwitch.checked = theme === themes.DARK;
     customSwitch.addEventListener("change", toggleTheme);
@@ -58,6 +60,13 @@ window.onload = function(event){
         if (table) {
             table.classList.remove("table-dark");
             table.classList.add("table-light");
+        }
+    }
+
+    function clickListener({target}) {
+        if (target.classList.contains('nav-link')) {
+            // document.querySelector('.collapse').collapse('hide');
+            $('.collapse').collapse('hide');
         }
     }
 }
