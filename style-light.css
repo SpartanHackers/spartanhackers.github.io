@@ -3,9 +3,14 @@
 }
 
 body {
+    margin-top: 72px;
     font-family: Avenir Next;
     background-color: white;
     color: #292929;
+}
+
+#collapsibleNavbar {
+    background-color: white;
 }
 
 p {
@@ -172,6 +177,7 @@ footer {
 
 /* switch */
 .custom-switch {
+    z-index: 10000;
     position: absolute;
     top: 10px;
     left: 10px;
