@@ -9,6 +9,12 @@ body {
     color: #292929;
 }
 
+#home-logo {
+    position: absolute;
+    top: 0;
+    width: 65px;
+}
+
 #collapsibleNavbar {
     background-color: white;
 }
@@ -178,9 +184,8 @@ footer {
 /* switch */
 .custom-switch {
     z-index: 10000;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    bottom: 25px;
+    right: 25px;
     position: fixed;
 }
 
@@ -191,7 +196,13 @@ footer {
 
 @media all and (max-width: 991px) {
     .custom-switch {
+        bottom: unset;
         left: unset;
         right: 10px;
+        top: 10px;
+    }
+
+    #home-logo {
+        position: relative;
     }
 }

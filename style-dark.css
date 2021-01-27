@@ -13,6 +13,18 @@ body {
     background-color: black;
 }
 
+
+#home-logo {
+    position: absolute;
+    top: 0;
+    height: 65px;
+}
+
+#home-logo.dark {
+    top: 23px;
+    height: 20px;
+}
+
 p {
     font-size: 16pt;
 }
@@ -177,10 +189,11 @@ footer {
 /* switch */
 .custom-switch {
     z-index: 10000;
+    bottom: 25px;
+    right: 25px;
     position: fixed;
-    top: 10px;
-    left: 10px;
 }
+
 
 #customSwitch {
     cursor: pointer;
@@ -191,5 +204,14 @@ footer {
     .custom-switch {
         left: unset;
         right: 10px;
+        top: 10px;
+    }
+
+    #home-logo {
+        position: relative;
+    }
+
+    #home-logo.dark {
+        top: unset;
     }
 }
