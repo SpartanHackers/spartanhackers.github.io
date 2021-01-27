@@ -9,8 +9,10 @@ window.onload = function(event){
     const theme = localStorage.getItem("theme");
     const navbar = document.querySelector(".navbar");
     const table = document.querySelector(".table");
+    const homeLogo = document.getElementById('home-logo');
     const customSwitch = document.getElementById("customSwitch");
     const collapse = document.querySelector('.navbar-collapse');
+    
     collapse.addEventListener('click', clickListener);
     
     customSwitch.checked = theme === themes.DARK;
@@ -39,6 +41,9 @@ window.onload = function(event){
         document.querySelector('link[href="/style-light.css"]')
         .setAttribute("href", "/style-dark.css");
         localStorage.setItem("theme", themes.DARK);
+
+        homeLogo.setAttribute('src', './images/SH-White.png');
+        homeLogo.classList.add('dark');
         
         navbar.classList.add("navbar-dark");
         navbar.classList.remove("navbar-light");
@@ -54,6 +59,9 @@ window.onload = function(event){
         .setAttribute("href", "/style-light.css");
         localStorage.setItem("theme", themes.LIGHT);
 
+        homeLogo.setAttribute('src', './images/SH Profile.png');
+        homeLogo.classList.remove('dark');
+
         navbar.classList.remove("navbar-dark");
         navbar.classList.add("navbar-light");
 
@@ -64,7 +72,7 @@ window.onload = function(event){
     }
 
     function clickListener({target}) {
-        if (target.classList.contains('nav-link')) {
+        if (target.classList.contains('nav-link') || target.id === 'home-logo') {
             // document.querySelector('.collapse').collapse('hide');
             $('.collapse').collapse('hide');
         }
