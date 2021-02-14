@@ -42,7 +42,7 @@ window.onload = function(event){
         .setAttribute("href", "/style-dark.css");
         localStorage.setItem("theme", themes.DARK);
 
-        homeLogo.setAttribute('src', './images/SH-White.png');
+        homeLogo.setAttribute('src', './images/SH DARK.png');
         homeLogo.classList.add('dark');
         
         navbar.classList.add("navbar-dark");
@@ -59,7 +59,7 @@ window.onload = function(event){
         .setAttribute("href", "/style-light.css");
         localStorage.setItem("theme", themes.LIGHT);
 
-        homeLogo.setAttribute('src', './images/SH Profile.png');
+        homeLogo.setAttribute('src', './images/SH LIGHT.png');
         homeLogo.classList.remove('dark');
 
         navbar.classList.remove("navbar-dark");
