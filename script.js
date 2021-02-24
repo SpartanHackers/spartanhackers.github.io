@@ -3,7 +3,6 @@ const themes = {
     DARK: "dark"
 }
 
-
 window.onload = function(event){
     
     const theme = localStorage.getItem("theme");
@@ -15,13 +14,13 @@ window.onload = function(event){
     
     collapse.addEventListener('click', clickListener);
     
-    customSwitch.checked = theme === themes.DARK;
+    customSwitch.checked = theme === themes.DARK || theme === null;
     customSwitch.addEventListener("change", toggleTheme);
 
-    if(theme === themes.DARK){
-        setTheme(true);
+    if(theme === themes.DARK || theme === null){
+        setDarkTheme();
     } else {
-        setTheme(false);
+        setLightTheme()
     }
     
     function toggleTheme(event){
@@ -38,37 +37,41 @@ window.onload = function(event){
     }
 
     function setDarkTheme(){
-        document.querySelector('link[href="/style-light.css"]')
-        .setAttribute("href", "/style-dark.css");
-        localStorage.setItem("theme", themes.DARK);
-
-        homeLogo.setAttribute('src', './images/SH DARK.png');
-        homeLogo.classList.add('dark');
-        
-        navbar.classList.add("navbar-dark");
-        navbar.classList.remove("navbar-light");
-        
-        if(table){
-            table.classList.add("table-dark");
-            table.classList.remove("table-light");
-        }
+        try {
+            document.querySelector('link[href="/style-light.css"]')
+            .setAttribute("href", "/style-dark.css");
+            localStorage.setItem("theme", themes.DARK);
+    
+            homeLogo.setAttribute('src', './images/SH DARK.png');
+            homeLogo.classList.add('dark');
+            
+            navbar.classList.add("navbar-dark");
+            navbar.classList.remove("navbar-light");
+            
+            if(table){
+                table.classList.add("table-dark");
+                table.classList.remove("table-light");
+            }  
+        } catch(e){}
     }
 
     function setLightTheme(){
-        document.querySelector('link[href="/style-dark.css"]')
-        .setAttribute("href", "/style-light.css");
-        localStorage.setItem("theme", themes.LIGHT);
+        try {
+            document.querySelector('link[href="/style-dark.css"]')
+            .setAttribute("href", "/style-light.css");
+            localStorage.setItem("theme", themes.LIGHT);
 
-        homeLogo.setAttribute('src', './images/SH LIGHT.png');
-        homeLogo.classList.remove('dark');
+            homeLogo.setAttribute('src', './images/SH LIGHT.png');
+            homeLogo.classList.remove('dark');
 
-        navbar.classList.remove("navbar-dark");
-        navbar.classList.add("navbar-light");
+            navbar.classList.remove("navbar-dark");
+            navbar.classList.add("navbar-light");
 
-        if (table) {
-            table.classList.remove("table-dark");
-            table.classList.add("table-light");
-        }
+            if (table) {
+                table.classList.remove("table-dark");
+                table.classList.add("table-light");
+            }
+        }  catch(e){}
     }
 
     function clickListener({target}) {
