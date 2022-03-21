@@ -207,3 +207,8 @@ footer {
         top: unset;
     }
 }
+#mc_embed_signup{
+    background:black; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+}
