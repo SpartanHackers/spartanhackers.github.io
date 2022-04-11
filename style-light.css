@@ -206,6 +206,9 @@ footer {
 }
 
 #mc_embed_signup{
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     background:#fff; 
     clear:left; 
     font:14px Helvetica,Arial,sans-serif; 

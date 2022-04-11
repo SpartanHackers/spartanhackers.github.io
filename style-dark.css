@@ -191,7 +191,6 @@ footer {
     cursor: pointer;
 }
 
-
 @media all and (max-width: 991px) {
     .custom-switch {
         left: unset;
@@ -208,6 +207,9 @@ footer {
     }
 }
 #mc_embed_signup{
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     background:black; 
     clear:left; 
     font:14px Helvetica,Arial,sans-serif; 
