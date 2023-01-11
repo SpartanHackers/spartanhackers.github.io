@@ -145,6 +145,10 @@ nav .fas:hover,.fab:hover {
     color: white;
     text-decoration: none;
 }
+#hackathon{
+    /*This is added because the hackathon chair card was larger than all the others.*/
+    margin: 15px;
+}
 
 /* Faqs */
 #faqs h2,h6 {
