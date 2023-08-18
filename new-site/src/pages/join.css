@@ -1,0 +1,42 @@
+body {
+    background-color:#171717;
+    min-width: 100vh;
+    max-width: 100vh;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+body.light{
+    background-color:whitesmoke;
+}
+
+/*Pageheader styling*/
+#header-container{
+    width:100vh;
+    position:absolute;
+    top:5%;
+}
+
+/*Infobox styling*/
+#left-container{
+    width:225vh;
+    height:fit-content;
+    position:absolute;
+    top: 40%;
+}
+
+#middle-container{
+    width:175vh;
+    height:fit-content;
+    position:absolute;
+    top: 40%;
+    left:70vh;
+}
+
+#right-container{
+    width:200vh;
+    height:fit-content;
+    position:absolute;
+    top: 40%;
+    left:125vh;
+}
