@@ -1,0 +1,102 @@
+body {
+    background-color:#171717;
+    min-width: 100vh;
+    max-width: 100vh;
+    min-height: 100vh;
+    overflow:hidden;
+
+    --color:white;
+    --color-2:rgb(203, 203, 203);
+}
+
+body.light{
+    background-color:whitesmoke;
+
+    --color:black;
+    --color-2:black;
+}
+
+h1{
+  position:relative;
+  top:700px;
+}
+
+/*Home screen styling*/
+#home-logo{
+    opacity: 0.2;
+    width:20%;
+    position:absolute;
+    z-index: 10;
+    top:20vh;
+    left: 10%;
+  }
+  
+  #header{
+    position:absolute;
+    z-index: 15;
+    top:25vh;
+    left: 7%;
+    width:fit-content;
+    height:fit-content;
+    font-weight: bolder;
+    color:var(--color);
+    font-size:40px;
+  }
+  
+  #header2{
+    position:absolute;
+    z-index: 15;
+    top:33vh;
+    left: 10.5%;
+    width:fit-content;
+    height:fit-content;
+    font-weight: bolder;
+    color: var(--color-2);
+  }
+  
+  #header3{
+    position:absolute;
+    z-index: 15;
+    top:37vh;
+    left: 8.5%;
+    width:fit-content;
+    height:fit-content;
+    font-weight: bolder;
+    color: var(--color-2);
+  }
+  
+  #information{
+    position:absolute;
+    z-index: 10;
+    top:50vh;
+    left: 62%;
+    width: 25%;
+    height:fit-content;
+    text-align:center;
+    color:var(--color);
+  }
+  
+  #join-text{
+    position:absolute;
+    z-index: 10;
+    top:65%;
+    left: 51.5%;
+    width: 35%;
+    height:fit-content;
+    text-align:center;
+    color:var(--color);
+  }
+  
+  #icons{
+    position:absolute;
+    z-index: 10;
+    top:65.5vh;
+    left: 77%;
+    width: 2%;
+    
+    color: var(--color);
+  }
+
+  #icons a{
+    color:var(--color);
+  }

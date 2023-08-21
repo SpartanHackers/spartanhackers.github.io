@@ -1,0 +1,60 @@
+#background, #reverse-background{
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    position: absolute;
+    top:9vh;
+
+    --color-background: #171717;
+    --color-background-reverse: rgb(12, 50, 10);
+  }
+
+#background.light, #reverse-background.light{
+  --color-background: whitesmoke;
+  --color-background-reverse: rgb(143, 182, 141);
+}
+
+  #background{
+    background-color: var(--color-background);
+  }
+  
+  #background.light{
+    background-color: var(--color-background);
+  }
+
+  #reverse-background{
+    background-color: var(--color-background-reverse);
+  }
+
+  #reverse-background.light{
+    background-color: var(--color-background-reverse);
+  }
+  
+  #background:before, #reverse-background:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+  
+  #background:before{
+    height: 320%;
+    width: 320%;
+    box-shadow: -1500px -100px 0 0 var(--color-background-reverse);
+  }
+  
+  #curve-corner-topleft:before.light{
+    box-shadow: -1500px -100px 0 0 var(--color-background-reverse);
+  }
+  
+  #reverse-background:before{
+    height: 320%;
+    width: 320%;
+    box-shadow: -1500px -100px 0 0 var(--color-background);
+  }
+  
+  #reverse-background:before.light{
+    box-shadow: -1500px -100px 0 0 var(--color-background);
+  }

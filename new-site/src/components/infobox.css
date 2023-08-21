@@ -1,0 +1,24 @@
+.outline{
+    width: 25%;
+    border-radius: 5px;
+    position: absolute;
+    padding: 15px;
+
+    --color-border: white;
+    --color-background: #1717178f;
+    --color:white;
+
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    color:var(--color);
+  }
+  
+  .outline.light{
+    --color-border: black;
+    --color-background: whitesmoke;
+    --color:black;
+
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    color:var(--color);
+  }

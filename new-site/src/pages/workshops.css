@@ -1,0 +1,67 @@
+body {
+    background-color:#171717;
+    min-width: 100vh;
+    max-width: 100vh;
+    min-height: 100vh;
+    overflow:hidden;
+
+    --color:white;
+    --background-tr:#474747b5;
+    --background-nth:#626262b5;
+    --background-hover:#474747;
+}
+
+body.light{
+    background-color:whitesmoke;
+    --color:black;
+    --background-tr:#7e7e7eb5;
+    --background-nth:#858585b5;
+    --background-hover:#7e7e7e;
+}
+
+a{
+    color:var(--color);
+}
+
+/*Table Styling*/
+.table-container{
+    height: 500px;
+    width: fit-content;
+    overflow-y:auto;
+    
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 30vh;
+    }
+
+table{
+    color:var(--color);
+    border-collapse: collapse;
+    width:100%;
+}
+
+th{
+    text-align: left;
+    padding:1vh;
+}
+
+td{
+    text-align: left;
+    padding: 1vh;
+}
+
+tr{
+    background-color:var(--background-tr);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-nth);
+}
+
+tr:hover {
+    background-color: var(--background-hover);
+}
+#flutter1{
+    width:25%;
+}

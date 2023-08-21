@@ -1,0 +1,16 @@
+.toggle-container{
+    position:fixed;
+    top:93%;
+    left:95%;
+    z-index: 1020;
+    width: fit-content;
+    height:fit-content;
+
+    --color: whitesmoke;
+    color:var(--color);
+  }
+  
+  #toggle-container.light{
+    --color: black;
+    color:var(--color);
+  }
